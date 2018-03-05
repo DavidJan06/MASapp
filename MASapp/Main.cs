@@ -33,25 +33,22 @@ namespace MASapp
 
         private void Main_Load(object sender, EventArgs e)
         {
-        //    SQLiteConnection conn = new
-        //      SQLiteConnection("data source=mas.sqlite");
+            //SQLiteConnection conn = new
+            //  SQLiteConnection("data source=mas.sqlite");
 
 
-        //    conn.Open();
+            //conn.Open();
 
-        //SQLiteCommand comm = new SQLiteCommand("Select * FROM surovine", conn);
-        //    using (SQLiteDataReader read = comm.ExecuteReader())
-        //    {
-        //        while (read.Read())
-        //        {
-        //            dataGridView1.AutoGenerateColumns = true;
-        //            dataGridView1.Rows.Add(new object[] {
-        //    read.GetValue(1),
-        //    read.GetValue(2)
-            
-        //    });
-        //        }
-        //    }
+            //SQLiteCommand comm = new SQLiteCommand("Select * FROM surovine", conn);
+            //using (SQLiteDataReader read = comm.ExecuteReader())
+            //{
+            //    while (read.Read())
+            //    {
+            //        dataGridView1.AutoGenerateColumns = true;
+                   
+            //       this.dataGridView1.Rows.Add(read.GetString(1));
+            //    }
+            //}
         }
     }
 }
