@@ -70,6 +70,7 @@
     <Compile Include="dodajanje_surovine.Designer.cs">
       <DependentUpon>dodajanje_surovine.cs</DependentUpon>
     </Compile>
+    <Compile Include="HelperFunctions.cs" />
     <Compile Include="Izdelki.cs" />
     <Compile Include="Kategorije.cs" />
     <Compile Include="Main.cs">
@@ -80,7 +81,6 @@
     </Compile>
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
-    <Compile Include="Surovine.cs" />
     <EmbeddedResource Include="dodajanje_surovine.resx">
       <DependentUpon>dodajanje_surovine.cs</DependentUpon>
     </EmbeddedResource>

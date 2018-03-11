@@ -13,11 +13,21 @@ namespace MASapp
 {
     public partial class Main : Form
     {
-        SQLiteConnection conn = new SQLiteConnection("data source=mas.sqlite");
-
         public Main()
         {
             InitializeComponent();
+            Refresh();
+        }
+
+        void Refresh() {
+
+            string ZalogaStr = "Select ime, kolicina FROM Izdelki WHERE id_kategorija = 1";
+            HelperFunctions.GetDataInDGV(ZalogaStr, dataGridView1);
+
+            string KategorijeStr = "Select ime, opis FROM Kategorije";
+            HelperFunctions.GetDataInDGV(KategorijeStr, dataGridView7);
+
+            HelperFunctions.GetDataInCB(KategorijeStr, comboBox2, 0);
         }
 
         #region Pregled
@@ -33,30 +43,14 @@ namespace MASapp
             dodaj.Show();
         }
 
-        private void Main_Load(object sender, EventArgs e)
-        {
-            string str = "Select ime, kolicina FROM surovine";
-
-            using (conn){ 
-                using (SQLiteCommand comm = new SQLiteCommand(str, conn)){
-                    comm.CommandType = CommandType.Text;
-                    using (SQLiteDataAdapter sda = new SQLiteDataAdapter(comm)){
-                        using (DataTable dt = new DataTable()){
-                            try
-                            {
-                                sda.Fill(dt);
-                                dataGridView1.DataSource = dt;
-                            }
-                            catch
-                            {
-                                MessageBox.Show("DataGridView error!");
-                            }
-                        }
-                    }
-                }
-            }
-        }
-
         #endregion
+
+        private void comboBox2_SelectedIndexChanged(object sender, EventArgs e)
+        {
+            MessageBox.Show(comboBox2.SelectedItem.ToString());
+            string Meni = "SELECT ime FROM Izdelki WHERE id_kategorija = (SELECT id_kategorija FROM Kategorije WHERE ime = '"+ comboBox2.SelectedItem.ToString() +"')";
+
+            HelperFunctions.GetDataInDGV(Meni, dataGridView9);
+        }
     }
 }

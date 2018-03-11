@@ -13,7 +13,6 @@ namespace MASapp
     
     public partial class dodajanje_surovine : Form
     {
-        Surovine sur = new Surovine();
 
         public dodajanje_surovine()
         {

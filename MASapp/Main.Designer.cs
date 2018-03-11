@@ -47,10 +47,8 @@
             this.button3 = new System.Windows.Forms.Button();
             this.dataGridView5 = new System.Windows.Forms.DataGridView();
             this.groupBox4 = new System.Windows.Forms.GroupBox();
-            this.comboBox3 = new System.Windows.Forms.ComboBox();
             this.dataGridView4 = new System.Windows.Forms.DataGridView();
             this.groupBox3 = new System.Windows.Forms.GroupBox();
-            this.listBox1 = new System.Windows.Forms.ListBox();
             this.comboBox2 = new System.Windows.Forms.ComboBox();
             this.Izdelki = new System.Windows.Forms.TabPage();
             this.groupBox8 = new System.Windows.Forms.GroupBox();
@@ -59,7 +57,14 @@
             this.groupBox7 = new System.Windows.Forms.GroupBox();
             this.button4 = new System.Windows.Forms.Button();
             this.dataGridView7 = new System.Windows.Forms.DataGridView();
-            this.comboBox1 = new System.Windows.Forms.ComboBox();
+            this.button6 = new System.Windows.Forms.Button();
+            this.button7 = new System.Windows.Forms.Button();
+            this.button8 = new System.Windows.Forms.Button();
+            this.button9 = new System.Windows.Forms.Button();
+            this.button10 = new System.Windows.Forms.Button();
+            this.label2 = new System.Windows.Forms.Label();
+            this.dataGridView9 = new System.Windows.Forms.DataGridView();
+            this.numericUpDown1 = new System.Windows.Forms.NumericUpDown();
             this.tabControl1.SuspendLayout();
             this.Pregled.SuspendLayout();
             this.groupBox2.SuspendLayout();
@@ -80,6 +85,8 @@
             ((System.ComponentModel.ISupportInitialize)(this.dataGridView8)).BeginInit();
             this.groupBox7.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.dataGridView7)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.dataGridView9)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.numericUpDown1)).BeginInit();
             this.SuspendLayout();
             // 
             // tabControl1
@@ -133,7 +140,7 @@
             this.button2.Name = "button2";
             this.button2.Size = new System.Drawing.Size(98, 27);
             this.button2.TabIndex = 1;
-            this.button2.Text = "button2";
+            this.button2.Text = "Izvozi";
             this.button2.UseVisualStyleBackColor = true;
             // 
             // dataGridView2
@@ -174,9 +181,11 @@
             this.dataGridView1.AutoSizeColumnsMode = System.Windows.Forms.DataGridViewAutoSizeColumnsMode.Fill;
             this.dataGridView1.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
             this.dataGridView1.Location = new System.Drawing.Point(6, 58);
+            this.dataGridView1.MultiSelect = false;
             this.dataGridView1.Name = "dataGridView1";
             this.dataGridView1.ReadOnly = true;
             this.dataGridView1.RowHeadersVisible = false;
+            this.dataGridView1.SelectionMode = System.Windows.Forms.DataGridViewSelectionMode.FullRowSelect;
             this.dataGridView1.Size = new System.Drawing.Size(404, 446);
             this.dataGridView1.TabIndex = 0;
             // 
@@ -270,7 +279,7 @@
             // 
             // groupBox4
             // 
-            this.groupBox4.Controls.Add(this.comboBox3);
+            this.groupBox4.Controls.Add(this.label2);
             this.groupBox4.Controls.Add(this.dataGridView4);
             this.groupBox4.Location = new System.Drawing.Point(295, 6);
             this.groupBox4.Name = "groupBox4";
@@ -279,25 +288,19 @@
             this.groupBox4.TabStop = false;
             this.groupBox4.Text = "Sestavine";
             // 
-            // comboBox3
-            // 
-            this.comboBox3.FormattingEnabled = true;
-            this.comboBox3.Location = new System.Drawing.Point(136, 24);
-            this.comboBox3.Name = "comboBox3";
-            this.comboBox3.Size = new System.Drawing.Size(121, 28);
-            this.comboBox3.TabIndex = 1;
-            // 
             // dataGridView4
             // 
             this.dataGridView4.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            this.dataGridView4.Location = new System.Drawing.Point(6, 58);
+            this.dataGridView4.Location = new System.Drawing.Point(6, 60);
             this.dataGridView4.Name = "dataGridView4";
-            this.dataGridView4.Size = new System.Drawing.Size(251, 188);
+            this.dataGridView4.Size = new System.Drawing.Size(251, 186);
             this.dataGridView4.TabIndex = 0;
             // 
             // groupBox3
             // 
-            this.groupBox3.Controls.Add(this.listBox1);
+            this.groupBox3.Controls.Add(this.numericUpDown1);
+            this.groupBox3.Controls.Add(this.dataGridView9);
+            this.groupBox3.Controls.Add(this.button10);
             this.groupBox3.Controls.Add(this.comboBox2);
             this.groupBox3.Location = new System.Drawing.Point(6, 6);
             this.groupBox3.Name = "groupBox3";
@@ -306,22 +309,14 @@
             this.groupBox3.TabStop = false;
             this.groupBox3.Text = "Meni";
             // 
-            // listBox1
-            // 
-            this.listBox1.FormattingEnabled = true;
-            this.listBox1.ItemHeight = 20;
-            this.listBox1.Location = new System.Drawing.Point(7, 60);
-            this.listBox1.Name = "listBox1";
-            this.listBox1.Size = new System.Drawing.Size(270, 444);
-            this.listBox1.TabIndex = 2;
-            // 
             // comboBox2
             // 
             this.comboBox2.FormattingEnabled = true;
-            this.comboBox2.Location = new System.Drawing.Point(155, 24);
+            this.comboBox2.Location = new System.Drawing.Point(6, 26);
             this.comboBox2.Name = "comboBox2";
             this.comboBox2.Size = new System.Drawing.Size(121, 28);
             this.comboBox2.TabIndex = 1;
+            this.comboBox2.SelectedIndexChanged += new System.EventHandler(this.comboBox2_SelectedIndexChanged);
             // 
             // Izdelki
             // 
@@ -337,7 +332,8 @@
             // 
             // groupBox8
             // 
-            this.groupBox8.Controls.Add(this.comboBox1);
+            this.groupBox8.Controls.Add(this.button7);
+            this.groupBox8.Controls.Add(this.button6);
             this.groupBox8.Controls.Add(this.button5);
             this.groupBox8.Controls.Add(this.dataGridView8);
             this.groupBox8.Location = new System.Drawing.Point(428, 6);
@@ -349,11 +345,11 @@
             // 
             // button5
             // 
-            this.button5.Location = new System.Drawing.Point(185, 18);
+            this.button5.Location = new System.Drawing.Point(312, 18);
             this.button5.Name = "button5";
             this.button5.Size = new System.Drawing.Size(98, 34);
             this.button5.TabIndex = 1;
-            this.button5.Text = "button5";
+            this.button5.Text = "Izbriši";
             this.button5.UseVisualStyleBackColor = true;
             // 
             // dataGridView8
@@ -366,6 +362,8 @@
             // 
             // groupBox7
             // 
+            this.groupBox7.Controls.Add(this.button9);
+            this.groupBox7.Controls.Add(this.button8);
             this.groupBox7.Controls.Add(this.button4);
             this.groupBox7.Controls.Add(this.dataGridView7);
             this.groupBox7.Location = new System.Drawing.Point(6, 6);
@@ -377,28 +375,105 @@
             // 
             // button4
             // 
-            this.button4.Location = new System.Drawing.Point(280, 18);
+            this.button4.Location = new System.Drawing.Point(312, 18);
             this.button4.Name = "button4";
-            this.button4.Size = new System.Drawing.Size(130, 34);
+            this.button4.Size = new System.Drawing.Size(98, 34);
             this.button4.TabIndex = 1;
-            this.button4.Text = "Nova Kategorija";
+            this.button4.Text = "Izbriši";
             this.button4.UseVisualStyleBackColor = true;
             // 
             // dataGridView7
             // 
+            this.dataGridView7.AllowUserToAddRows = false;
+            this.dataGridView7.AllowUserToDeleteRows = false;
+            this.dataGridView7.AutoSizeColumnsMode = System.Windows.Forms.DataGridViewAutoSizeColumnsMode.Fill;
             this.dataGridView7.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
             this.dataGridView7.Location = new System.Drawing.Point(6, 58);
+            this.dataGridView7.MultiSelect = false;
             this.dataGridView7.Name = "dataGridView7";
+            this.dataGridView7.ReadOnly = true;
+            this.dataGridView7.RowHeadersVisible = false;
+            this.dataGridView7.SelectionMode = System.Windows.Forms.DataGridViewSelectionMode.FullRowSelect;
             this.dataGridView7.Size = new System.Drawing.Size(404, 446);
             this.dataGridView7.TabIndex = 0;
             // 
-            // comboBox1
+            // button6
             // 
-            this.comboBox1.FormattingEnabled = true;
-            this.comboBox1.Location = new System.Drawing.Point(289, 22);
-            this.comboBox1.Name = "comboBox1";
-            this.comboBox1.Size = new System.Drawing.Size(121, 28);
-            this.comboBox1.TabIndex = 2;
+            this.button6.Location = new System.Drawing.Point(208, 18);
+            this.button6.Name = "button6";
+            this.button6.Size = new System.Drawing.Size(98, 34);
+            this.button6.TabIndex = 2;
+            this.button6.Text = "Uredi";
+            this.button6.UseVisualStyleBackColor = true;
+            // 
+            // button7
+            // 
+            this.button7.Location = new System.Drawing.Point(104, 18);
+            this.button7.Name = "button7";
+            this.button7.Size = new System.Drawing.Size(98, 34);
+            this.button7.TabIndex = 3;
+            this.button7.Text = "Dodaj";
+            this.button7.UseVisualStyleBackColor = true;
+            // 
+            // button8
+            // 
+            this.button8.Location = new System.Drawing.Point(208, 18);
+            this.button8.Name = "button8";
+            this.button8.Size = new System.Drawing.Size(98, 34);
+            this.button8.TabIndex = 2;
+            this.button8.Text = "Uredi";
+            this.button8.UseVisualStyleBackColor = true;
+            // 
+            // button9
+            // 
+            this.button9.Location = new System.Drawing.Point(104, 18);
+            this.button9.Name = "button9";
+            this.button9.Size = new System.Drawing.Size(98, 34);
+            this.button9.TabIndex = 3;
+            this.button9.Text = "Dodaj";
+            this.button9.UseVisualStyleBackColor = true;
+            // 
+            // button10
+            // 
+            this.button10.Location = new System.Drawing.Point(193, 27);
+            this.button10.Name = "button10";
+            this.button10.Size = new System.Drawing.Size(84, 28);
+            this.button10.TabIndex = 6;
+            this.button10.Text = "Dodaj";
+            this.button10.UseVisualStyleBackColor = true;
+            // 
+            // label2
+            // 
+            this.label2.AutoSize = true;
+            this.label2.Location = new System.Drawing.Point(6, 34);
+            this.label2.Name = "label2";
+            this.label2.Size = new System.Drawing.Size(64, 20);
+            this.label2.TabIndex = 6;
+            this.label2.Text = "Izdelek ";
+            // 
+            // dataGridView9
+            // 
+            this.dataGridView9.AllowUserToAddRows = false;
+            this.dataGridView9.AllowUserToDeleteRows = false;
+            this.dataGridView9.AllowUserToResizeColumns = false;
+            this.dataGridView9.AllowUserToResizeRows = false;
+            this.dataGridView9.AutoSizeColumnsMode = System.Windows.Forms.DataGridViewAutoSizeColumnsMode.Fill;
+            this.dataGridView9.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
+            this.dataGridView9.Location = new System.Drawing.Point(6, 60);
+            this.dataGridView9.MultiSelect = false;
+            this.dataGridView9.Name = "dataGridView9";
+            this.dataGridView9.ReadOnly = true;
+            this.dataGridView9.RowHeadersVisible = false;
+            this.dataGridView9.SelectionMode = System.Windows.Forms.DataGridViewSelectionMode.FullRowSelect;
+            this.dataGridView9.Size = new System.Drawing.Size(271, 446);
+            this.dataGridView9.TabIndex = 7;
+            // 
+            // numericUpDown1
+            // 
+            this.numericUpDown1.Location = new System.Drawing.Point(141, 28);
+            this.numericUpDown1.Name = "numericUpDown1";
+            this.numericUpDown1.Size = new System.Drawing.Size(46, 26);
+            this.numericUpDown1.TabIndex = 8;
             // 
             // Main
             // 
@@ -413,7 +488,6 @@
             this.ShowIcon = false;
             this.ShowInTaskbar = false;
             this.Text = "MAŠapp";
-            this.Load += new System.EventHandler(this.Main_Load);
             this.tabControl1.ResumeLayout(false);
             this.Pregled.ResumeLayout(false);
             this.groupBox2.ResumeLayout(false);
@@ -428,6 +502,7 @@
             ((System.ComponentModel.ISupportInitialize)(this.dataGridView6)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.dataGridView5)).EndInit();
             this.groupBox4.ResumeLayout(false);
+            this.groupBox4.PerformLayout();
             ((System.ComponentModel.ISupportInitialize)(this.dataGridView4)).EndInit();
             this.groupBox3.ResumeLayout(false);
             this.Izdelki.ResumeLayout(false);
@@ -435,6 +510,8 @@
             ((System.ComponentModel.ISupportInitialize)(this.dataGridView8)).EndInit();
             this.groupBox7.ResumeLayout(false);
             ((System.ComponentModel.ISupportInitialize)(this.dataGridView7)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.dataGridView9)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.numericUpDown1)).EndInit();
             this.ResumeLayout(false);
 
         }
@@ -460,10 +537,8 @@
         private System.Windows.Forms.Button button3;
         private System.Windows.Forms.DataGridView dataGridView5;
         private System.Windows.Forms.GroupBox groupBox4;
-        private System.Windows.Forms.ComboBox comboBox3;
         private System.Windows.Forms.DataGridView dataGridView4;
         private System.Windows.Forms.GroupBox groupBox3;
-        private System.Windows.Forms.ListBox listBox1;
         private System.Windows.Forms.ComboBox comboBox2;
         private System.Windows.Forms.TabPage Izdelki;
         private System.Windows.Forms.GroupBox groupBox8;
@@ -472,7 +547,14 @@
         private System.Windows.Forms.GroupBox groupBox7;
         private System.Windows.Forms.Button button4;
         private System.Windows.Forms.DataGridView dataGridView7;
-        private System.Windows.Forms.ComboBox comboBox1;
+        private System.Windows.Forms.Button button7;
+        private System.Windows.Forms.Button button6;
+        private System.Windows.Forms.Button button9;
+        private System.Windows.Forms.Button button8;
+        private System.Windows.Forms.Label label2;
+        private System.Windows.Forms.Button button10;
+        private System.Windows.Forms.DataGridView dataGridView9;
+        private System.Windows.Forms.NumericUpDown numericUpDown1;
     }
 }
 
