@@ -20,19 +20,10 @@ namespace MASapp
             InitializeComponent();
         }
 
-        private void label1_Click(object sender, EventArgs e)
-        {
-
-        }
-
         private void button1_Click(object sender, EventArgs e)
         {
-            int kolicina = Int32.Parse(kolicina_surovine.Text); 
-
-            string ime = ime_surovine.Text;
-
-            sur.dodajSurovino(ime, kolicina);
             
+          
         }
     }
 }

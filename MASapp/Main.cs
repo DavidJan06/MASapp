@@ -13,12 +13,14 @@ namespace MASapp
 {
     public partial class Main : Form
     {
-        
+        SQLiteConnection conn = new SQLiteConnection("data source=mas.sqlite");
 
         public Main()
         {
             InitializeComponent();
         }
+
+        #region Pregled
 
         private void button1_Click(object sender, EventArgs e)
         {
@@ -33,22 +35,28 @@ namespace MASapp
 
         private void Main_Load(object sender, EventArgs e)
         {
-            //SQLiteConnection conn = new
-            //  SQLiteConnection("data source=mas.sqlite");
+            string str = "Select ime, kolicina FROM surovine";
 
-
-            //conn.Open();
-
-            //SQLiteCommand comm = new SQLiteCommand("Select * FROM surovine", conn);
-            //using (SQLiteDataReader read = comm.ExecuteReader())
-            //{
-            //    while (read.Read())
-            //    {
-            //        dataGridView1.AutoGenerateColumns = true;
-                   
-            //       this.dataGridView1.Rows.Add(read.GetString(1));
-            //    }
-            //}
+            using (conn){ 
+                using (SQLiteCommand comm = new SQLiteCommand(str, conn)){
+                    comm.CommandType = CommandType.Text;
+                    using (SQLiteDataAdapter sda = new SQLiteDataAdapter(comm)){
+                        using (DataTable dt = new DataTable()){
+                            try
+                            {
+                                sda.Fill(dt);
+                                dataGridView1.DataSource = dt;
+                            }
+                            catch
+                            {
+                                MessageBox.Show("DataGridView error!");
+                            }
+                        }
+                    }
+                }
+            }
         }
+
+        #endregion
     }
 }
