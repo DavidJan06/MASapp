@@ -47,24 +47,24 @@
             this.button3 = new System.Windows.Forms.Button();
             this.dataGridView5 = new System.Windows.Forms.DataGridView();
             this.groupBox4 = new System.Windows.Forms.GroupBox();
+            this.label2 = new System.Windows.Forms.Label();
             this.dataGridView4 = new System.Windows.Forms.DataGridView();
             this.groupBox3 = new System.Windows.Forms.GroupBox();
+            this.numericUpDown1 = new System.Windows.Forms.NumericUpDown();
+            this.dataGridView9 = new System.Windows.Forms.DataGridView();
+            this.button10 = new System.Windows.Forms.Button();
             this.comboBox2 = new System.Windows.Forms.ComboBox();
             this.Izdelki = new System.Windows.Forms.TabPage();
             this.groupBox8 = new System.Windows.Forms.GroupBox();
+            this.button7 = new System.Windows.Forms.Button();
+            this.button6 = new System.Windows.Forms.Button();
             this.button5 = new System.Windows.Forms.Button();
             this.dataGridView8 = new System.Windows.Forms.DataGridView();
             this.groupBox7 = new System.Windows.Forms.GroupBox();
+            this.button9 = new System.Windows.Forms.Button();
+            this.button8 = new System.Windows.Forms.Button();
             this.button4 = new System.Windows.Forms.Button();
             this.dataGridView7 = new System.Windows.Forms.DataGridView();
-            this.button6 = new System.Windows.Forms.Button();
-            this.button7 = new System.Windows.Forms.Button();
-            this.button8 = new System.Windows.Forms.Button();
-            this.button9 = new System.Windows.Forms.Button();
-            this.button10 = new System.Windows.Forms.Button();
-            this.label2 = new System.Windows.Forms.Label();
-            this.dataGridView9 = new System.Windows.Forms.DataGridView();
-            this.numericUpDown1 = new System.Windows.Forms.NumericUpDown();
             this.tabControl1.SuspendLayout();
             this.Pregled.SuspendLayout();
             this.groupBox2.SuspendLayout();
@@ -80,13 +80,13 @@
             this.groupBox4.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.dataGridView4)).BeginInit();
             this.groupBox3.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.numericUpDown1)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.dataGridView9)).BeginInit();
             this.Izdelki.SuspendLayout();
             this.groupBox8.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.dataGridView8)).BeginInit();
             this.groupBox7.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.dataGridView7)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.dataGridView9)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.numericUpDown1)).BeginInit();
             this.SuspendLayout();
             // 
             // tabControl1
@@ -288,6 +288,15 @@
             this.groupBox4.TabStop = false;
             this.groupBox4.Text = "Sestavine";
             // 
+            // label2
+            // 
+            this.label2.AutoSize = true;
+            this.label2.Location = new System.Drawing.Point(6, 34);
+            this.label2.Name = "label2";
+            this.label2.Size = new System.Drawing.Size(64, 20);
+            this.label2.TabIndex = 6;
+            this.label2.Text = "Izdelek ";
+            // 
             // dataGridView4
             // 
             this.dataGridView4.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
@@ -308,6 +317,39 @@
             this.groupBox3.TabIndex = 1;
             this.groupBox3.TabStop = false;
             this.groupBox3.Text = "Meni";
+            // 
+            // numericUpDown1
+            // 
+            this.numericUpDown1.Location = new System.Drawing.Point(141, 28);
+            this.numericUpDown1.Name = "numericUpDown1";
+            this.numericUpDown1.Size = new System.Drawing.Size(46, 26);
+            this.numericUpDown1.TabIndex = 8;
+            // 
+            // dataGridView9
+            // 
+            this.dataGridView9.AllowUserToAddRows = false;
+            this.dataGridView9.AllowUserToDeleteRows = false;
+            this.dataGridView9.AllowUserToResizeColumns = false;
+            this.dataGridView9.AllowUserToResizeRows = false;
+            this.dataGridView9.AutoSizeColumnsMode = System.Windows.Forms.DataGridViewAutoSizeColumnsMode.Fill;
+            this.dataGridView9.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
+            this.dataGridView9.Location = new System.Drawing.Point(6, 60);
+            this.dataGridView9.MultiSelect = false;
+            this.dataGridView9.Name = "dataGridView9";
+            this.dataGridView9.ReadOnly = true;
+            this.dataGridView9.RowHeadersVisible = false;
+            this.dataGridView9.SelectionMode = System.Windows.Forms.DataGridViewSelectionMode.FullRowSelect;
+            this.dataGridView9.Size = new System.Drawing.Size(271, 446);
+            this.dataGridView9.TabIndex = 7;
+            // 
+            // button10
+            // 
+            this.button10.Location = new System.Drawing.Point(193, 27);
+            this.button10.Name = "button10";
+            this.button10.Size = new System.Drawing.Size(84, 28);
+            this.button10.TabIndex = 6;
+            this.button10.Text = "Dodaj";
+            this.button10.UseVisualStyleBackColor = true;
             // 
             // comboBox2
             // 
@@ -343,6 +385,24 @@
             this.groupBox8.TabStop = false;
             this.groupBox8.Text = "Izdelki";
             // 
+            // button7
+            // 
+            this.button7.Location = new System.Drawing.Point(104, 18);
+            this.button7.Name = "button7";
+            this.button7.Size = new System.Drawing.Size(98, 34);
+            this.button7.TabIndex = 3;
+            this.button7.Text = "Dodaj";
+            this.button7.UseVisualStyleBackColor = true;
+            // 
+            // button6
+            // 
+            this.button6.Location = new System.Drawing.Point(208, 18);
+            this.button6.Name = "button6";
+            this.button6.Size = new System.Drawing.Size(98, 34);
+            this.button6.TabIndex = 2;
+            this.button6.Text = "Uredi";
+            this.button6.UseVisualStyleBackColor = true;
+            // 
             // button5
             // 
             this.button5.Location = new System.Drawing.Point(312, 18);
@@ -354,9 +414,15 @@
             // 
             // dataGridView8
             // 
+            this.dataGridView8.AllowUserToAddRows = false;
+            this.dataGridView8.AllowUserToDeleteRows = false;
+            this.dataGridView8.AutoSizeColumnsMode = System.Windows.Forms.DataGridViewAutoSizeColumnsMode.Fill;
             this.dataGridView8.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
             this.dataGridView8.Location = new System.Drawing.Point(6, 58);
             this.dataGridView8.Name = "dataGridView8";
+            this.dataGridView8.ReadOnly = true;
+            this.dataGridView8.RowHeadersVisible = false;
+            this.dataGridView8.SelectionMode = System.Windows.Forms.DataGridViewSelectionMode.FullRowSelect;
             this.dataGridView8.Size = new System.Drawing.Size(404, 446);
             this.dataGridView8.TabIndex = 0;
             // 
@@ -372,6 +438,24 @@
             this.groupBox7.TabIndex = 1;
             this.groupBox7.TabStop = false;
             this.groupBox7.Text = "Kategorije";
+            // 
+            // button9
+            // 
+            this.button9.Location = new System.Drawing.Point(104, 18);
+            this.button9.Name = "button9";
+            this.button9.Size = new System.Drawing.Size(98, 34);
+            this.button9.TabIndex = 3;
+            this.button9.Text = "Dodaj";
+            this.button9.UseVisualStyleBackColor = true;
+            // 
+            // button8
+            // 
+            this.button8.Location = new System.Drawing.Point(208, 18);
+            this.button8.Name = "button8";
+            this.button8.Size = new System.Drawing.Size(98, 34);
+            this.button8.TabIndex = 2;
+            this.button8.Text = "Uredi";
+            this.button8.UseVisualStyleBackColor = true;
             // 
             // button4
             // 
@@ -396,84 +480,7 @@
             this.dataGridView7.SelectionMode = System.Windows.Forms.DataGridViewSelectionMode.FullRowSelect;
             this.dataGridView7.Size = new System.Drawing.Size(404, 446);
             this.dataGridView7.TabIndex = 0;
-            // 
-            // button6
-            // 
-            this.button6.Location = new System.Drawing.Point(208, 18);
-            this.button6.Name = "button6";
-            this.button6.Size = new System.Drawing.Size(98, 34);
-            this.button6.TabIndex = 2;
-            this.button6.Text = "Uredi";
-            this.button6.UseVisualStyleBackColor = true;
-            // 
-            // button7
-            // 
-            this.button7.Location = new System.Drawing.Point(104, 18);
-            this.button7.Name = "button7";
-            this.button7.Size = new System.Drawing.Size(98, 34);
-            this.button7.TabIndex = 3;
-            this.button7.Text = "Dodaj";
-            this.button7.UseVisualStyleBackColor = true;
-            // 
-            // button8
-            // 
-            this.button8.Location = new System.Drawing.Point(208, 18);
-            this.button8.Name = "button8";
-            this.button8.Size = new System.Drawing.Size(98, 34);
-            this.button8.TabIndex = 2;
-            this.button8.Text = "Uredi";
-            this.button8.UseVisualStyleBackColor = true;
-            // 
-            // button9
-            // 
-            this.button9.Location = new System.Drawing.Point(104, 18);
-            this.button9.Name = "button9";
-            this.button9.Size = new System.Drawing.Size(98, 34);
-            this.button9.TabIndex = 3;
-            this.button9.Text = "Dodaj";
-            this.button9.UseVisualStyleBackColor = true;
-            // 
-            // button10
-            // 
-            this.button10.Location = new System.Drawing.Point(193, 27);
-            this.button10.Name = "button10";
-            this.button10.Size = new System.Drawing.Size(84, 28);
-            this.button10.TabIndex = 6;
-            this.button10.Text = "Dodaj";
-            this.button10.UseVisualStyleBackColor = true;
-            // 
-            // label2
-            // 
-            this.label2.AutoSize = true;
-            this.label2.Location = new System.Drawing.Point(6, 34);
-            this.label2.Name = "label2";
-            this.label2.Size = new System.Drawing.Size(64, 20);
-            this.label2.TabIndex = 6;
-            this.label2.Text = "Izdelek ";
-            // 
-            // dataGridView9
-            // 
-            this.dataGridView9.AllowUserToAddRows = false;
-            this.dataGridView9.AllowUserToDeleteRows = false;
-            this.dataGridView9.AllowUserToResizeColumns = false;
-            this.dataGridView9.AllowUserToResizeRows = false;
-            this.dataGridView9.AutoSizeColumnsMode = System.Windows.Forms.DataGridViewAutoSizeColumnsMode.Fill;
-            this.dataGridView9.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            this.dataGridView9.Location = new System.Drawing.Point(6, 60);
-            this.dataGridView9.MultiSelect = false;
-            this.dataGridView9.Name = "dataGridView9";
-            this.dataGridView9.ReadOnly = true;
-            this.dataGridView9.RowHeadersVisible = false;
-            this.dataGridView9.SelectionMode = System.Windows.Forms.DataGridViewSelectionMode.FullRowSelect;
-            this.dataGridView9.Size = new System.Drawing.Size(271, 446);
-            this.dataGridView9.TabIndex = 7;
-            // 
-            // numericUpDown1
-            // 
-            this.numericUpDown1.Location = new System.Drawing.Point(141, 28);
-            this.numericUpDown1.Name = "numericUpDown1";
-            this.numericUpDown1.Size = new System.Drawing.Size(46, 26);
-            this.numericUpDown1.TabIndex = 8;
+            this.dataGridView7.CellMouseDoubleClick += new System.Windows.Forms.DataGridViewCellMouseEventHandler(this.dataGridView7_CellMouseDoubleClick);
             // 
             // Main
             // 
@@ -505,13 +512,13 @@
             this.groupBox4.PerformLayout();
             ((System.ComponentModel.ISupportInitialize)(this.dataGridView4)).EndInit();
             this.groupBox3.ResumeLayout(false);
+            ((System.ComponentModel.ISupportInitialize)(this.numericUpDown1)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.dataGridView9)).EndInit();
             this.Izdelki.ResumeLayout(false);
             this.groupBox8.ResumeLayout(false);
             ((System.ComponentModel.ISupportInitialize)(this.dataGridView8)).EndInit();
             this.groupBox7.ResumeLayout(false);
             ((System.ComponentModel.ISupportInitialize)(this.dataGridView7)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.dataGridView9)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.numericUpDown1)).EndInit();
             this.ResumeLayout(false);
 
         }

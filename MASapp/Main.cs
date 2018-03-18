@@ -47,10 +47,15 @@ namespace MASapp
 
         private void comboBox2_SelectedIndexChanged(object sender, EventArgs e)
         {
-            MessageBox.Show(comboBox2.SelectedItem.ToString());
             string Meni = "SELECT ime FROM Izdelki WHERE id_kategorija = (SELECT id_kategorija FROM Kategorije WHERE ime = '"+ comboBox2.SelectedItem.ToString() +"')";
-
             HelperFunctions.GetDataInDGV(Meni, dataGridView9);
+        }
+
+        private void dataGridView7_CellMouseDoubleClick(object sender, DataGridViewCellMouseEventArgs e)
+        {
+            MessageBox.Show(dataGridView7.SelectedCells[0].Value.ToString());
+            string Izdelki = "SELECT ime FROM Izdelki WHERE id_kategorija = (SELECT id_kategorija FROM Kategorije WHERE ime = '" + dataGridView7.SelectedCells[0].Value.ToString() + "')";
+            HelperFunctions.GetDataInDGV(Izdelki, dataGridView8);
         }
     }
 }
