@@ -64,11 +64,11 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="dodajanje_surovine.cs">
+    <Compile Include="DodajSurovine.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="dodajanje_surovine.Designer.cs">
-      <DependentUpon>dodajanje_surovine.cs</DependentUpon>
+    <Compile Include="DodajSurovine.Designer.cs">
+      <DependentUpon>DodajSurovine.cs</DependentUpon>
     </Compile>
     <Compile Include="HelperFunctions.cs" />
     <Compile Include="Izdelki.cs" />
@@ -81,8 +81,8 @@
     </Compile>
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
-    <EmbeddedResource Include="dodajanje_surovine.resx">
-      <DependentUpon>dodajanje_surovine.cs</DependentUpon>
+    <EmbeddedResource Include="DodajSurovine.resx">
+      <DependentUpon>DodajSurovine.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Main.resx">
       <DependentUpon>Main.cs</DependentUpon>

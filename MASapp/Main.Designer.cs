@@ -31,62 +31,64 @@
             this.tabControl1 = new System.Windows.Forms.TabControl();
             this.Pregled = new System.Windows.Forms.TabPage();
             this.groupBox2 = new System.Windows.Forms.GroupBox();
-            this.DatumComboBox = new System.Windows.Forms.ComboBox();
-            this.button2 = new System.Windows.Forms.Button();
-            this.dataGridView2 = new System.Windows.Forms.DataGridView();
+            this.datumCBp = new System.Windows.Forms.ComboBox();
+            this.izvoziBp = new System.Windows.Forms.Button();
+            this.porabaDGVp = new System.Windows.Forms.DataGridView();
             this.groupBox1 = new System.Windows.Forms.GroupBox();
-            this.button1 = new System.Windows.Forms.Button();
-            this.dataGridView1 = new System.Windows.Forms.DataGridView();
+            this.dodajZalogoBp = new System.Windows.Forms.Button();
+            this.zalogaDGVp = new System.Windows.Forms.DataGridView();
             this.Vnos = new System.Windows.Forms.TabPage();
             this.groupBox6 = new System.Windows.Forms.GroupBox();
-            this.comboBox5 = new System.Windows.Forms.ComboBox();
-            this.dataGridView3 = new System.Windows.Forms.DataGridView();
+            this.vnosiCBv = new System.Windows.Forms.ComboBox();
+            this.pregledVnosevDGVv = new System.Windows.Forms.DataGridView();
             this.groupBox5 = new System.Windows.Forms.GroupBox();
-            this.dataGridView6 = new System.Windows.Forms.DataGridView();
-            this.label1 = new System.Windows.Forms.Label();
-            this.button3 = new System.Windows.Forms.Button();
-            this.dataGridView5 = new System.Windows.Forms.DataGridView();
+            this.pregledDGVv = new System.Windows.Forms.DataGridView();
+            this.datumLv = new System.Windows.Forms.Label();
+            this.shraniPogledBv = new System.Windows.Forms.Button();
+            this.porabaDGVv = new System.Windows.Forms.DataGridView();
             this.groupBox4 = new System.Windows.Forms.GroupBox();
             this.label2 = new System.Windows.Forms.Label();
-            this.dataGridView4 = new System.Windows.Forms.DataGridView();
+            this.sestavineIzdelkiDGVv = new System.Windows.Forms.DataGridView();
             this.groupBox3 = new System.Windows.Forms.GroupBox();
-            this.numericUpDown1 = new System.Windows.Forms.NumericUpDown();
-            this.dataGridView9 = new System.Windows.Forms.DataGridView();
-            this.button10 = new System.Windows.Forms.Button();
-            this.comboBox2 = new System.Windows.Forms.ComboBox();
+            this.NUDv = new System.Windows.Forms.NumericUpDown();
+            this.izdelkiDGVv = new System.Windows.Forms.DataGridView();
+            this.dodajIzdelekBv = new System.Windows.Forms.Button();
+            this.kategorijeCBv = new System.Windows.Forms.ComboBox();
             this.Izdelki = new System.Windows.Forms.TabPage();
             this.groupBox8 = new System.Windows.Forms.GroupBox();
-            this.button7 = new System.Windows.Forms.Button();
-            this.button6 = new System.Windows.Forms.Button();
-            this.button5 = new System.Windows.Forms.Button();
-            this.dataGridView8 = new System.Windows.Forms.DataGridView();
+            this.dodajIzdelkiBi = new System.Windows.Forms.Button();
+            this.urediIzdelkiBi = new System.Windows.Forms.Button();
+            this.izbrisiIzdelkiBi = new System.Windows.Forms.Button();
+            this.izdelkiDGVi = new System.Windows.Forms.DataGridView();
             this.groupBox7 = new System.Windows.Forms.GroupBox();
-            this.button9 = new System.Windows.Forms.Button();
-            this.button8 = new System.Windows.Forms.Button();
-            this.button4 = new System.Windows.Forms.Button();
-            this.dataGridView7 = new System.Windows.Forms.DataGridView();
+            this.dodajKategorijeBi = new System.Windows.Forms.Button();
+            this.urediKategorijeBi = new System.Windows.Forms.Button();
+            this.izbrisiKategorijeBi = new System.Windows.Forms.Button();
+            this.kategorijeDGVi = new System.Windows.Forms.DataGridView();
+            this.dodajPogledBv = new System.Windows.Forms.Button();
+            this.izbrišiPogledBv = new System.Windows.Forms.Button();
             this.tabControl1.SuspendLayout();
             this.Pregled.SuspendLayout();
             this.groupBox2.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.dataGridView2)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.porabaDGVp)).BeginInit();
             this.groupBox1.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.zalogaDGVp)).BeginInit();
             this.Vnos.SuspendLayout();
             this.groupBox6.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.dataGridView3)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pregledVnosevDGVv)).BeginInit();
             this.groupBox5.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.dataGridView6)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.dataGridView5)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pregledDGVv)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.porabaDGVv)).BeginInit();
             this.groupBox4.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.dataGridView4)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.sestavineIzdelkiDGVv)).BeginInit();
             this.groupBox3.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.numericUpDown1)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.dataGridView9)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.NUDv)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.izdelkiDGVv)).BeginInit();
             this.Izdelki.SuspendLayout();
             this.groupBox8.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.dataGridView8)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.izdelkiDGVi)).BeginInit();
             this.groupBox7.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.dataGridView7)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.kategorijeDGVi)).BeginInit();
             this.SuspendLayout();
             // 
             // tabControl1
@@ -116,9 +118,9 @@
             // 
             // groupBox2
             // 
-            this.groupBox2.Controls.Add(this.DatumComboBox);
-            this.groupBox2.Controls.Add(this.button2);
-            this.groupBox2.Controls.Add(this.dataGridView2);
+            this.groupBox2.Controls.Add(this.datumCBp);
+            this.groupBox2.Controls.Add(this.izvoziBp);
+            this.groupBox2.Controls.Add(this.porabaDGVp);
             this.groupBox2.Location = new System.Drawing.Point(428, 6);
             this.groupBox2.Name = "groupBox2";
             this.groupBox2.Size = new System.Drawing.Size(416, 510);
@@ -126,35 +128,35 @@
             this.groupBox2.TabStop = false;
             this.groupBox2.Text = "Poraba";
             // 
-            // DatumComboBox
+            // datumCBp
             // 
-            this.DatumComboBox.FormattingEnabled = true;
-            this.DatumComboBox.Location = new System.Drawing.Point(289, 24);
-            this.DatumComboBox.Name = "DatumComboBox";
-            this.DatumComboBox.Size = new System.Drawing.Size(121, 28);
-            this.DatumComboBox.TabIndex = 2;
+            this.datumCBp.FormattingEnabled = true;
+            this.datumCBp.Location = new System.Drawing.Point(289, 24);
+            this.datumCBp.Name = "datumCBp";
+            this.datumCBp.Size = new System.Drawing.Size(121, 28);
+            this.datumCBp.TabIndex = 2;
             // 
-            // button2
+            // izvoziBp
             // 
-            this.button2.Location = new System.Drawing.Point(185, 25);
-            this.button2.Name = "button2";
-            this.button2.Size = new System.Drawing.Size(98, 27);
-            this.button2.TabIndex = 1;
-            this.button2.Text = "Izvozi";
-            this.button2.UseVisualStyleBackColor = true;
+            this.izvoziBp.Location = new System.Drawing.Point(185, 25);
+            this.izvoziBp.Name = "izvoziBp";
+            this.izvoziBp.Size = new System.Drawing.Size(98, 27);
+            this.izvoziBp.TabIndex = 1;
+            this.izvoziBp.Text = "Izvozi";
+            this.izvoziBp.UseVisualStyleBackColor = true;
             // 
-            // dataGridView2
+            // porabaDGVp
             // 
-            this.dataGridView2.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            this.dataGridView2.Location = new System.Drawing.Point(6, 58);
-            this.dataGridView2.Name = "dataGridView2";
-            this.dataGridView2.Size = new System.Drawing.Size(404, 446);
-            this.dataGridView2.TabIndex = 0;
+            this.porabaDGVp.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
+            this.porabaDGVp.Location = new System.Drawing.Point(6, 58);
+            this.porabaDGVp.Name = "porabaDGVp";
+            this.porabaDGVp.Size = new System.Drawing.Size(404, 446);
+            this.porabaDGVp.TabIndex = 0;
             // 
             // groupBox1
             // 
-            this.groupBox1.Controls.Add(this.button1);
-            this.groupBox1.Controls.Add(this.dataGridView1);
+            this.groupBox1.Controls.Add(this.dodajZalogoBp);
+            this.groupBox1.Controls.Add(this.zalogaDGVp);
             this.groupBox1.Location = new System.Drawing.Point(6, 6);
             this.groupBox1.Name = "groupBox1";
             this.groupBox1.Size = new System.Drawing.Size(416, 510);
@@ -162,32 +164,32 @@
             this.groupBox1.TabStop = false;
             this.groupBox1.Text = "Zaloga";
             // 
-            // button1
+            // dodajZalogoBp
             // 
-            this.button1.Location = new System.Drawing.Point(274, 24);
-            this.button1.Name = "button1";
-            this.button1.Size = new System.Drawing.Size(136, 28);
-            this.button1.TabIndex = 1;
-            this.button1.Text = "Dodaj zalogi";
-            this.button1.UseVisualStyleBackColor = true;
-            this.button1.Click += new System.EventHandler(this.button1_Click_1);
+            this.dodajZalogoBp.Location = new System.Drawing.Point(274, 24);
+            this.dodajZalogoBp.Name = "dodajZalogoBp";
+            this.dodajZalogoBp.Size = new System.Drawing.Size(136, 28);
+            this.dodajZalogoBp.TabIndex = 1;
+            this.dodajZalogoBp.Text = "Dodaj zalogi";
+            this.dodajZalogoBp.UseVisualStyleBackColor = true;
+            this.dodajZalogoBp.Click += new System.EventHandler(this.button1_Click_1);
             // 
-            // dataGridView1
+            // zalogaDGVp
             // 
-            this.dataGridView1.AllowUserToAddRows = false;
-            this.dataGridView1.AllowUserToDeleteRows = false;
-            this.dataGridView1.AllowUserToResizeColumns = false;
-            this.dataGridView1.AllowUserToResizeRows = false;
-            this.dataGridView1.AutoSizeColumnsMode = System.Windows.Forms.DataGridViewAutoSizeColumnsMode.Fill;
-            this.dataGridView1.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            this.dataGridView1.Location = new System.Drawing.Point(6, 58);
-            this.dataGridView1.MultiSelect = false;
-            this.dataGridView1.Name = "dataGridView1";
-            this.dataGridView1.ReadOnly = true;
-            this.dataGridView1.RowHeadersVisible = false;
-            this.dataGridView1.SelectionMode = System.Windows.Forms.DataGridViewSelectionMode.FullRowSelect;
-            this.dataGridView1.Size = new System.Drawing.Size(404, 446);
-            this.dataGridView1.TabIndex = 0;
+            this.zalogaDGVp.AllowUserToAddRows = false;
+            this.zalogaDGVp.AllowUserToDeleteRows = false;
+            this.zalogaDGVp.AllowUserToResizeColumns = false;
+            this.zalogaDGVp.AllowUserToResizeRows = false;
+            this.zalogaDGVp.AutoSizeColumnsMode = System.Windows.Forms.DataGridViewAutoSizeColumnsMode.Fill;
+            this.zalogaDGVp.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
+            this.zalogaDGVp.Location = new System.Drawing.Point(6, 58);
+            this.zalogaDGVp.MultiSelect = false;
+            this.zalogaDGVp.Name = "zalogaDGVp";
+            this.zalogaDGVp.ReadOnly = true;
+            this.zalogaDGVp.RowHeadersVisible = false;
+            this.zalogaDGVp.SelectionMode = System.Windows.Forms.DataGridViewSelectionMode.FullRowSelect;
+            this.zalogaDGVp.Size = new System.Drawing.Size(404, 446);
+            this.zalogaDGVp.TabIndex = 0;
             // 
             // Vnos
             // 
@@ -205,8 +207,9 @@
             // 
             // groupBox6
             // 
-            this.groupBox6.Controls.Add(this.comboBox5);
-            this.groupBox6.Controls.Add(this.dataGridView3);
+            this.groupBox6.Controls.Add(this.dodajPogledBv);
+            this.groupBox6.Controls.Add(this.vnosiCBv);
+            this.groupBox6.Controls.Add(this.pregledVnosevDGVv);
             this.groupBox6.Location = new System.Drawing.Point(295, 264);
             this.groupBox6.Name = "groupBox6";
             this.groupBox6.Size = new System.Drawing.Size(263, 250);
@@ -214,73 +217,74 @@
             this.groupBox6.TabStop = false;
             this.groupBox6.Text = "Pregled Vnosev";
             // 
-            // comboBox5
+            // vnosiCBv
             // 
-            this.comboBox5.FormattingEnabled = true;
-            this.comboBox5.Location = new System.Drawing.Point(136, 24);
-            this.comboBox5.Name = "comboBox5";
-            this.comboBox5.Size = new System.Drawing.Size(121, 28);
-            this.comboBox5.TabIndex = 1;
+            this.vnosiCBv.FormattingEnabled = true;
+            this.vnosiCBv.Location = new System.Drawing.Point(136, 24);
+            this.vnosiCBv.Name = "vnosiCBv";
+            this.vnosiCBv.Size = new System.Drawing.Size(121, 28);
+            this.vnosiCBv.TabIndex = 1;
             // 
-            // dataGridView3
+            // pregledVnosevDGVv
             // 
-            this.dataGridView3.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            this.dataGridView3.Location = new System.Drawing.Point(6, 58);
-            this.dataGridView3.Name = "dataGridView3";
-            this.dataGridView3.Size = new System.Drawing.Size(251, 188);
-            this.dataGridView3.TabIndex = 0;
+            this.pregledVnosevDGVv.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
+            this.pregledVnosevDGVv.Location = new System.Drawing.Point(6, 58);
+            this.pregledVnosevDGVv.Name = "pregledVnosevDGVv";
+            this.pregledVnosevDGVv.Size = new System.Drawing.Size(251, 188);
+            this.pregledVnosevDGVv.TabIndex = 0;
             // 
             // groupBox5
             // 
-            this.groupBox5.Controls.Add(this.dataGridView6);
-            this.groupBox5.Controls.Add(this.label1);
-            this.groupBox5.Controls.Add(this.button3);
-            this.groupBox5.Controls.Add(this.dataGridView5);
+            this.groupBox5.Controls.Add(this.izbrišiPogledBv);
+            this.groupBox5.Controls.Add(this.pregledDGVv);
+            this.groupBox5.Controls.Add(this.datumLv);
+            this.groupBox5.Controls.Add(this.shraniPogledBv);
+            this.groupBox5.Controls.Add(this.porabaDGVv);
             this.groupBox5.Location = new System.Drawing.Point(564, 6);
             this.groupBox5.Name = "groupBox5";
             this.groupBox5.Size = new System.Drawing.Size(283, 510);
             this.groupBox5.TabIndex = 3;
             this.groupBox5.TabStop = false;
-            this.groupBox5.Text = "Meni";
+            this.groupBox5.Text = "Pogled";
             // 
-            // dataGridView6
+            // pregledDGVv
             // 
-            this.dataGridView6.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            this.dataGridView6.Location = new System.Drawing.Point(6, 57);
-            this.dataGridView6.Name = "dataGridView6";
-            this.dataGridView6.Size = new System.Drawing.Size(270, 205);
-            this.dataGridView6.TabIndex = 5;
+            this.pregledDGVv.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
+            this.pregledDGVv.Location = new System.Drawing.Point(6, 57);
+            this.pregledDGVv.Name = "pregledDGVv";
+            this.pregledDGVv.Size = new System.Drawing.Size(270, 205);
+            this.pregledDGVv.TabIndex = 5;
             // 
-            // label1
+            // datumLv
             // 
-            this.label1.AutoSize = true;
-            this.label1.Location = new System.Drawing.Point(6, 27);
-            this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(65, 20);
-            this.label1.TabIndex = 4;
-            this.label1.Text = "Datum: ";
+            this.datumLv.AutoSize = true;
+            this.datumLv.Location = new System.Drawing.Point(6, 27);
+            this.datumLv.Name = "datumLv";
+            this.datumLv.Size = new System.Drawing.Size(65, 20);
+            this.datumLv.TabIndex = 4;
+            this.datumLv.Text = "Datum: ";
             // 
-            // button3
+            // shraniPogledBv
             // 
-            this.button3.Location = new System.Drawing.Point(192, 23);
-            this.button3.Name = "button3";
-            this.button3.Size = new System.Drawing.Size(84, 28);
-            this.button3.TabIndex = 3;
-            this.button3.Text = "button3";
-            this.button3.UseVisualStyleBackColor = true;
+            this.shraniPogledBv.Location = new System.Drawing.Point(192, 23);
+            this.shraniPogledBv.Name = "shraniPogledBv";
+            this.shraniPogledBv.Size = new System.Drawing.Size(84, 28);
+            this.shraniPogledBv.TabIndex = 3;
+            this.shraniPogledBv.Text = "Shrani";
+            this.shraniPogledBv.UseVisualStyleBackColor = true;
             // 
-            // dataGridView5
+            // porabaDGVv
             // 
-            this.dataGridView5.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            this.dataGridView5.Location = new System.Drawing.Point(6, 268);
-            this.dataGridView5.Name = "dataGridView5";
-            this.dataGridView5.Size = new System.Drawing.Size(270, 236);
-            this.dataGridView5.TabIndex = 0;
+            this.porabaDGVv.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
+            this.porabaDGVv.Location = new System.Drawing.Point(6, 268);
+            this.porabaDGVv.Name = "porabaDGVv";
+            this.porabaDGVv.Size = new System.Drawing.Size(270, 236);
+            this.porabaDGVv.TabIndex = 0;
             // 
             // groupBox4
             // 
             this.groupBox4.Controls.Add(this.label2);
-            this.groupBox4.Controls.Add(this.dataGridView4);
+            this.groupBox4.Controls.Add(this.sestavineIzdelkiDGVv);
             this.groupBox4.Location = new System.Drawing.Point(295, 6);
             this.groupBox4.Name = "groupBox4";
             this.groupBox4.Size = new System.Drawing.Size(263, 252);
@@ -297,20 +301,20 @@
             this.label2.TabIndex = 6;
             this.label2.Text = "Izdelek ";
             // 
-            // dataGridView4
+            // sestavineIzdelkiDGVv
             // 
-            this.dataGridView4.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            this.dataGridView4.Location = new System.Drawing.Point(6, 60);
-            this.dataGridView4.Name = "dataGridView4";
-            this.dataGridView4.Size = new System.Drawing.Size(251, 186);
-            this.dataGridView4.TabIndex = 0;
+            this.sestavineIzdelkiDGVv.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
+            this.sestavineIzdelkiDGVv.Location = new System.Drawing.Point(6, 60);
+            this.sestavineIzdelkiDGVv.Name = "sestavineIzdelkiDGVv";
+            this.sestavineIzdelkiDGVv.Size = new System.Drawing.Size(251, 186);
+            this.sestavineIzdelkiDGVv.TabIndex = 0;
             // 
             // groupBox3
             // 
-            this.groupBox3.Controls.Add(this.numericUpDown1);
-            this.groupBox3.Controls.Add(this.dataGridView9);
-            this.groupBox3.Controls.Add(this.button10);
-            this.groupBox3.Controls.Add(this.comboBox2);
+            this.groupBox3.Controls.Add(this.NUDv);
+            this.groupBox3.Controls.Add(this.izdelkiDGVv);
+            this.groupBox3.Controls.Add(this.dodajIzdelekBv);
+            this.groupBox3.Controls.Add(this.kategorijeCBv);
             this.groupBox3.Location = new System.Drawing.Point(6, 6);
             this.groupBox3.Name = "groupBox3";
             this.groupBox3.Size = new System.Drawing.Size(283, 510);
@@ -318,47 +322,57 @@
             this.groupBox3.TabStop = false;
             this.groupBox3.Text = "Meni";
             // 
-            // numericUpDown1
+            // NUDv
             // 
-            this.numericUpDown1.Location = new System.Drawing.Point(141, 28);
-            this.numericUpDown1.Name = "numericUpDown1";
-            this.numericUpDown1.Size = new System.Drawing.Size(46, 26);
-            this.numericUpDown1.TabIndex = 8;
+            this.NUDv.Location = new System.Drawing.Point(141, 28);
+            this.NUDv.Minimum = new decimal(new int[] {
+            1,
+            0,
+            0,
+            0});
+            this.NUDv.Name = "NUDv";
+            this.NUDv.Size = new System.Drawing.Size(46, 26);
+            this.NUDv.TabIndex = 8;
+            this.NUDv.Value = new decimal(new int[] {
+            1,
+            0,
+            0,
+            0});
             // 
-            // dataGridView9
+            // izdelkiDGVv
             // 
-            this.dataGridView9.AllowUserToAddRows = false;
-            this.dataGridView9.AllowUserToDeleteRows = false;
-            this.dataGridView9.AllowUserToResizeColumns = false;
-            this.dataGridView9.AllowUserToResizeRows = false;
-            this.dataGridView9.AutoSizeColumnsMode = System.Windows.Forms.DataGridViewAutoSizeColumnsMode.Fill;
-            this.dataGridView9.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            this.dataGridView9.Location = new System.Drawing.Point(6, 60);
-            this.dataGridView9.MultiSelect = false;
-            this.dataGridView9.Name = "dataGridView9";
-            this.dataGridView9.ReadOnly = true;
-            this.dataGridView9.RowHeadersVisible = false;
-            this.dataGridView9.SelectionMode = System.Windows.Forms.DataGridViewSelectionMode.FullRowSelect;
-            this.dataGridView9.Size = new System.Drawing.Size(271, 446);
-            this.dataGridView9.TabIndex = 7;
+            this.izdelkiDGVv.AllowUserToAddRows = false;
+            this.izdelkiDGVv.AllowUserToDeleteRows = false;
+            this.izdelkiDGVv.AllowUserToResizeColumns = false;
+            this.izdelkiDGVv.AllowUserToResizeRows = false;
+            this.izdelkiDGVv.AutoSizeColumnsMode = System.Windows.Forms.DataGridViewAutoSizeColumnsMode.Fill;
+            this.izdelkiDGVv.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
+            this.izdelkiDGVv.Location = new System.Drawing.Point(6, 60);
+            this.izdelkiDGVv.MultiSelect = false;
+            this.izdelkiDGVv.Name = "izdelkiDGVv";
+            this.izdelkiDGVv.ReadOnly = true;
+            this.izdelkiDGVv.RowHeadersVisible = false;
+            this.izdelkiDGVv.SelectionMode = System.Windows.Forms.DataGridViewSelectionMode.FullRowSelect;
+            this.izdelkiDGVv.Size = new System.Drawing.Size(271, 446);
+            this.izdelkiDGVv.TabIndex = 7;
             // 
-            // button10
+            // dodajIzdelekBv
             // 
-            this.button10.Location = new System.Drawing.Point(193, 27);
-            this.button10.Name = "button10";
-            this.button10.Size = new System.Drawing.Size(84, 28);
-            this.button10.TabIndex = 6;
-            this.button10.Text = "Dodaj";
-            this.button10.UseVisualStyleBackColor = true;
+            this.dodajIzdelekBv.Location = new System.Drawing.Point(193, 27);
+            this.dodajIzdelekBv.Name = "dodajIzdelekBv";
+            this.dodajIzdelekBv.Size = new System.Drawing.Size(84, 28);
+            this.dodajIzdelekBv.TabIndex = 6;
+            this.dodajIzdelekBv.Text = "Dodaj";
+            this.dodajIzdelekBv.UseVisualStyleBackColor = true;
             // 
-            // comboBox2
+            // kategorijeCBv
             // 
-            this.comboBox2.FormattingEnabled = true;
-            this.comboBox2.Location = new System.Drawing.Point(6, 26);
-            this.comboBox2.Name = "comboBox2";
-            this.comboBox2.Size = new System.Drawing.Size(121, 28);
-            this.comboBox2.TabIndex = 1;
-            this.comboBox2.SelectedIndexChanged += new System.EventHandler(this.comboBox2_SelectedIndexChanged);
+            this.kategorijeCBv.FormattingEnabled = true;
+            this.kategorijeCBv.Location = new System.Drawing.Point(6, 26);
+            this.kategorijeCBv.Name = "kategorijeCBv";
+            this.kategorijeCBv.Size = new System.Drawing.Size(121, 28);
+            this.kategorijeCBv.TabIndex = 1;
+            this.kategorijeCBv.SelectedIndexChanged += new System.EventHandler(this.comboBox2_SelectedIndexChanged);
             // 
             // Izdelki
             // 
@@ -374,10 +388,10 @@
             // 
             // groupBox8
             // 
-            this.groupBox8.Controls.Add(this.button7);
-            this.groupBox8.Controls.Add(this.button6);
-            this.groupBox8.Controls.Add(this.button5);
-            this.groupBox8.Controls.Add(this.dataGridView8);
+            this.groupBox8.Controls.Add(this.dodajIzdelkiBi);
+            this.groupBox8.Controls.Add(this.urediIzdelkiBi);
+            this.groupBox8.Controls.Add(this.izbrisiIzdelkiBi);
+            this.groupBox8.Controls.Add(this.izdelkiDGVi);
             this.groupBox8.Location = new System.Drawing.Point(428, 6);
             this.groupBox8.Name = "groupBox8";
             this.groupBox8.Size = new System.Drawing.Size(416, 510);
@@ -385,53 +399,53 @@
             this.groupBox8.TabStop = false;
             this.groupBox8.Text = "Izdelki";
             // 
-            // button7
+            // dodajIzdelkiBi
             // 
-            this.button7.Location = new System.Drawing.Point(104, 18);
-            this.button7.Name = "button7";
-            this.button7.Size = new System.Drawing.Size(98, 34);
-            this.button7.TabIndex = 3;
-            this.button7.Text = "Dodaj";
-            this.button7.UseVisualStyleBackColor = true;
+            this.dodajIzdelkiBi.Location = new System.Drawing.Point(104, 18);
+            this.dodajIzdelkiBi.Name = "dodajIzdelkiBi";
+            this.dodajIzdelkiBi.Size = new System.Drawing.Size(98, 34);
+            this.dodajIzdelkiBi.TabIndex = 3;
+            this.dodajIzdelkiBi.Text = "Dodaj";
+            this.dodajIzdelkiBi.UseVisualStyleBackColor = true;
             // 
-            // button6
+            // urediIzdelkiBi
             // 
-            this.button6.Location = new System.Drawing.Point(208, 18);
-            this.button6.Name = "button6";
-            this.button6.Size = new System.Drawing.Size(98, 34);
-            this.button6.TabIndex = 2;
-            this.button6.Text = "Uredi";
-            this.button6.UseVisualStyleBackColor = true;
+            this.urediIzdelkiBi.Location = new System.Drawing.Point(208, 18);
+            this.urediIzdelkiBi.Name = "urediIzdelkiBi";
+            this.urediIzdelkiBi.Size = new System.Drawing.Size(98, 34);
+            this.urediIzdelkiBi.TabIndex = 2;
+            this.urediIzdelkiBi.Text = "Uredi";
+            this.urediIzdelkiBi.UseVisualStyleBackColor = true;
             // 
-            // button5
+            // izbrisiIzdelkiBi
             // 
-            this.button5.Location = new System.Drawing.Point(312, 18);
-            this.button5.Name = "button5";
-            this.button5.Size = new System.Drawing.Size(98, 34);
-            this.button5.TabIndex = 1;
-            this.button5.Text = "Izbriši";
-            this.button5.UseVisualStyleBackColor = true;
+            this.izbrisiIzdelkiBi.Location = new System.Drawing.Point(312, 18);
+            this.izbrisiIzdelkiBi.Name = "izbrisiIzdelkiBi";
+            this.izbrisiIzdelkiBi.Size = new System.Drawing.Size(98, 34);
+            this.izbrisiIzdelkiBi.TabIndex = 1;
+            this.izbrisiIzdelkiBi.Text = "Izbriši";
+            this.izbrisiIzdelkiBi.UseVisualStyleBackColor = true;
             // 
-            // dataGridView8
+            // izdelkiDGVi
             // 
-            this.dataGridView8.AllowUserToAddRows = false;
-            this.dataGridView8.AllowUserToDeleteRows = false;
-            this.dataGridView8.AutoSizeColumnsMode = System.Windows.Forms.DataGridViewAutoSizeColumnsMode.Fill;
-            this.dataGridView8.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            this.dataGridView8.Location = new System.Drawing.Point(6, 58);
-            this.dataGridView8.Name = "dataGridView8";
-            this.dataGridView8.ReadOnly = true;
-            this.dataGridView8.RowHeadersVisible = false;
-            this.dataGridView8.SelectionMode = System.Windows.Forms.DataGridViewSelectionMode.FullRowSelect;
-            this.dataGridView8.Size = new System.Drawing.Size(404, 446);
-            this.dataGridView8.TabIndex = 0;
+            this.izdelkiDGVi.AllowUserToAddRows = false;
+            this.izdelkiDGVi.AllowUserToDeleteRows = false;
+            this.izdelkiDGVi.AutoSizeColumnsMode = System.Windows.Forms.DataGridViewAutoSizeColumnsMode.Fill;
+            this.izdelkiDGVi.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
+            this.izdelkiDGVi.Location = new System.Drawing.Point(6, 58);
+            this.izdelkiDGVi.Name = "izdelkiDGVi";
+            this.izdelkiDGVi.ReadOnly = true;
+            this.izdelkiDGVi.RowHeadersVisible = false;
+            this.izdelkiDGVi.SelectionMode = System.Windows.Forms.DataGridViewSelectionMode.FullRowSelect;
+            this.izdelkiDGVi.Size = new System.Drawing.Size(404, 446);
+            this.izdelkiDGVi.TabIndex = 0;
             // 
             // groupBox7
             // 
-            this.groupBox7.Controls.Add(this.button9);
-            this.groupBox7.Controls.Add(this.button8);
-            this.groupBox7.Controls.Add(this.button4);
-            this.groupBox7.Controls.Add(this.dataGridView7);
+            this.groupBox7.Controls.Add(this.dodajKategorijeBi);
+            this.groupBox7.Controls.Add(this.urediKategorijeBi);
+            this.groupBox7.Controls.Add(this.izbrisiKategorijeBi);
+            this.groupBox7.Controls.Add(this.kategorijeDGVi);
             this.groupBox7.Location = new System.Drawing.Point(6, 6);
             this.groupBox7.Name = "groupBox7";
             this.groupBox7.Size = new System.Drawing.Size(416, 510);
@@ -439,48 +453,66 @@
             this.groupBox7.TabStop = false;
             this.groupBox7.Text = "Kategorije";
             // 
-            // button9
+            // dodajKategorijeBi
             // 
-            this.button9.Location = new System.Drawing.Point(104, 18);
-            this.button9.Name = "button9";
-            this.button9.Size = new System.Drawing.Size(98, 34);
-            this.button9.TabIndex = 3;
-            this.button9.Text = "Dodaj";
-            this.button9.UseVisualStyleBackColor = true;
+            this.dodajKategorijeBi.Location = new System.Drawing.Point(104, 18);
+            this.dodajKategorijeBi.Name = "dodajKategorijeBi";
+            this.dodajKategorijeBi.Size = new System.Drawing.Size(98, 34);
+            this.dodajKategorijeBi.TabIndex = 3;
+            this.dodajKategorijeBi.Text = "Dodaj";
+            this.dodajKategorijeBi.UseVisualStyleBackColor = true;
             // 
-            // button8
+            // urediKategorijeBi
             // 
-            this.button8.Location = new System.Drawing.Point(208, 18);
-            this.button8.Name = "button8";
-            this.button8.Size = new System.Drawing.Size(98, 34);
-            this.button8.TabIndex = 2;
-            this.button8.Text = "Uredi";
-            this.button8.UseVisualStyleBackColor = true;
+            this.urediKategorijeBi.Location = new System.Drawing.Point(208, 18);
+            this.urediKategorijeBi.Name = "urediKategorijeBi";
+            this.urediKategorijeBi.Size = new System.Drawing.Size(98, 34);
+            this.urediKategorijeBi.TabIndex = 2;
+            this.urediKategorijeBi.Text = "Uredi";
+            this.urediKategorijeBi.UseVisualStyleBackColor = true;
             // 
-            // button4
+            // izbrisiKategorijeBi
             // 
-            this.button4.Location = new System.Drawing.Point(312, 18);
-            this.button4.Name = "button4";
-            this.button4.Size = new System.Drawing.Size(98, 34);
-            this.button4.TabIndex = 1;
-            this.button4.Text = "Izbriši";
-            this.button4.UseVisualStyleBackColor = true;
+            this.izbrisiKategorijeBi.Location = new System.Drawing.Point(312, 18);
+            this.izbrisiKategorijeBi.Name = "izbrisiKategorijeBi";
+            this.izbrisiKategorijeBi.Size = new System.Drawing.Size(98, 34);
+            this.izbrisiKategorijeBi.TabIndex = 1;
+            this.izbrisiKategorijeBi.Text = "Izbriši";
+            this.izbrisiKategorijeBi.UseVisualStyleBackColor = true;
             // 
-            // dataGridView7
+            // kategorijeDGVi
             // 
-            this.dataGridView7.AllowUserToAddRows = false;
-            this.dataGridView7.AllowUserToDeleteRows = false;
-            this.dataGridView7.AutoSizeColumnsMode = System.Windows.Forms.DataGridViewAutoSizeColumnsMode.Fill;
-            this.dataGridView7.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            this.dataGridView7.Location = new System.Drawing.Point(6, 58);
-            this.dataGridView7.MultiSelect = false;
-            this.dataGridView7.Name = "dataGridView7";
-            this.dataGridView7.ReadOnly = true;
-            this.dataGridView7.RowHeadersVisible = false;
-            this.dataGridView7.SelectionMode = System.Windows.Forms.DataGridViewSelectionMode.FullRowSelect;
-            this.dataGridView7.Size = new System.Drawing.Size(404, 446);
-            this.dataGridView7.TabIndex = 0;
-            this.dataGridView7.CellMouseDoubleClick += new System.Windows.Forms.DataGridViewCellMouseEventHandler(this.dataGridView7_CellMouseDoubleClick);
+            this.kategorijeDGVi.AllowUserToAddRows = false;
+            this.kategorijeDGVi.AllowUserToDeleteRows = false;
+            this.kategorijeDGVi.AutoSizeColumnsMode = System.Windows.Forms.DataGridViewAutoSizeColumnsMode.Fill;
+            this.kategorijeDGVi.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
+            this.kategorijeDGVi.Location = new System.Drawing.Point(6, 58);
+            this.kategorijeDGVi.MultiSelect = false;
+            this.kategorijeDGVi.Name = "kategorijeDGVi";
+            this.kategorijeDGVi.ReadOnly = true;
+            this.kategorijeDGVi.RowHeadersVisible = false;
+            this.kategorijeDGVi.SelectionMode = System.Windows.Forms.DataGridViewSelectionMode.FullRowSelect;
+            this.kategorijeDGVi.Size = new System.Drawing.Size(404, 446);
+            this.kategorijeDGVi.TabIndex = 0;
+            this.kategorijeDGVi.CellMouseDoubleClick += new System.Windows.Forms.DataGridViewCellMouseEventHandler(this.kategorijeDGV_CellMouseDoubleClick);
+            // 
+            // dodajPogledBv
+            // 
+            this.dodajPogledBv.Location = new System.Drawing.Point(6, 25);
+            this.dodajPogledBv.Name = "dodajPogledBv";
+            this.dodajPogledBv.Size = new System.Drawing.Size(84, 27);
+            this.dodajPogledBv.TabIndex = 2;
+            this.dodajPogledBv.Text = "Dodaj";
+            this.dodajPogledBv.UseVisualStyleBackColor = true;
+            // 
+            // izbrišiPogledBv
+            // 
+            this.izbrišiPogledBv.Location = new System.Drawing.Point(102, 23);
+            this.izbrišiPogledBv.Name = "izbrišiPogledBv";
+            this.izbrišiPogledBv.Size = new System.Drawing.Size(84, 28);
+            this.izbrišiPogledBv.TabIndex = 6;
+            this.izbrišiPogledBv.Text = "Izbriši";
+            this.izbrišiPogledBv.UseVisualStyleBackColor = true;
             // 
             // Main
             // 
@@ -498,27 +530,27 @@
             this.tabControl1.ResumeLayout(false);
             this.Pregled.ResumeLayout(false);
             this.groupBox2.ResumeLayout(false);
-            ((System.ComponentModel.ISupportInitialize)(this.dataGridView2)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.porabaDGVp)).EndInit();
             this.groupBox1.ResumeLayout(false);
-            ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.zalogaDGVp)).EndInit();
             this.Vnos.ResumeLayout(false);
             this.groupBox6.ResumeLayout(false);
-            ((System.ComponentModel.ISupportInitialize)(this.dataGridView3)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pregledVnosevDGVv)).EndInit();
             this.groupBox5.ResumeLayout(false);
             this.groupBox5.PerformLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.dataGridView6)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.dataGridView5)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pregledDGVv)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.porabaDGVv)).EndInit();
             this.groupBox4.ResumeLayout(false);
             this.groupBox4.PerformLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.dataGridView4)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.sestavineIzdelkiDGVv)).EndInit();
             this.groupBox3.ResumeLayout(false);
-            ((System.ComponentModel.ISupportInitialize)(this.numericUpDown1)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.dataGridView9)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.NUDv)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.izdelkiDGVv)).EndInit();
             this.Izdelki.ResumeLayout(false);
             this.groupBox8.ResumeLayout(false);
-            ((System.ComponentModel.ISupportInitialize)(this.dataGridView8)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.izdelkiDGVi)).EndInit();
             this.groupBox7.ResumeLayout(false);
-            ((System.ComponentModel.ISupportInitialize)(this.dataGridView7)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.kategorijeDGVi)).EndInit();
             this.ResumeLayout(false);
 
         }
@@ -528,40 +560,42 @@
         private System.Windows.Forms.TabControl tabControl1;
         private System.Windows.Forms.TabPage Pregled;
         private System.Windows.Forms.GroupBox groupBox2;
-        private System.Windows.Forms.ComboBox DatumComboBox;
-        private System.Windows.Forms.Button button2;
-        private System.Windows.Forms.DataGridView dataGridView2;
+        private System.Windows.Forms.ComboBox datumCBp;
+        private System.Windows.Forms.Button izvoziBp;
+        private System.Windows.Forms.DataGridView porabaDGVp;
         private System.Windows.Forms.GroupBox groupBox1;
-        private System.Windows.Forms.Button button1;
-        private System.Windows.Forms.DataGridView dataGridView1;
+        private System.Windows.Forms.Button dodajZalogoBp;
+        private System.Windows.Forms.DataGridView zalogaDGVp;
         private System.Windows.Forms.TabPage Vnos;
         private System.Windows.Forms.GroupBox groupBox6;
-        private System.Windows.Forms.ComboBox comboBox5;
-        private System.Windows.Forms.DataGridView dataGridView3;
+        private System.Windows.Forms.ComboBox vnosiCBv;
+        private System.Windows.Forms.DataGridView pregledVnosevDGVv;
         private System.Windows.Forms.GroupBox groupBox5;
-        private System.Windows.Forms.DataGridView dataGridView6;
-        private System.Windows.Forms.Label label1;
-        private System.Windows.Forms.Button button3;
-        private System.Windows.Forms.DataGridView dataGridView5;
+        private System.Windows.Forms.DataGridView pregledDGVv;
+        private System.Windows.Forms.Label datumLv;
+        private System.Windows.Forms.Button shraniPogledBv;
+        private System.Windows.Forms.DataGridView porabaDGVv;
         private System.Windows.Forms.GroupBox groupBox4;
-        private System.Windows.Forms.DataGridView dataGridView4;
+        private System.Windows.Forms.DataGridView sestavineIzdelkiDGVv;
         private System.Windows.Forms.GroupBox groupBox3;
-        private System.Windows.Forms.ComboBox comboBox2;
+        private System.Windows.Forms.ComboBox kategorijeCBv;
         private System.Windows.Forms.TabPage Izdelki;
         private System.Windows.Forms.GroupBox groupBox8;
-        private System.Windows.Forms.Button button5;
-        private System.Windows.Forms.DataGridView dataGridView8;
+        private System.Windows.Forms.Button izbrisiIzdelkiBi;
+        private System.Windows.Forms.DataGridView izdelkiDGVi;
         private System.Windows.Forms.GroupBox groupBox7;
-        private System.Windows.Forms.Button button4;
-        private System.Windows.Forms.DataGridView dataGridView7;
-        private System.Windows.Forms.Button button7;
-        private System.Windows.Forms.Button button6;
-        private System.Windows.Forms.Button button9;
-        private System.Windows.Forms.Button button8;
+        private System.Windows.Forms.Button izbrisiKategorijeBi;
+        private System.Windows.Forms.DataGridView kategorijeDGVi;
+        private System.Windows.Forms.Button dodajIzdelkiBi;
+        private System.Windows.Forms.Button urediIzdelkiBi;
+        private System.Windows.Forms.Button dodajKategorijeBi;
+        private System.Windows.Forms.Button urediKategorijeBi;
         private System.Windows.Forms.Label label2;
-        private System.Windows.Forms.Button button10;
-        private System.Windows.Forms.DataGridView dataGridView9;
-        private System.Windows.Forms.NumericUpDown numericUpDown1;
+        private System.Windows.Forms.Button dodajIzdelekBv;
+        private System.Windows.Forms.DataGridView izdelkiDGVv;
+        private System.Windows.Forms.NumericUpDown NUDv;
+        private System.Windows.Forms.Button dodajPogledBv;
+        private System.Windows.Forms.Button izbrišiPogledBv;
     }
 }
 

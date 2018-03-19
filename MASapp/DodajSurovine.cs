@@ -11,18 +11,14 @@ using System.Windows.Forms;
 namespace MASapp
 {
     
-    public partial class dodajanje_surovine : Form
+    public partial class DodajSurovine : Form
     {
 
-        public dodajanje_surovine()
+        public DodajSurovine()
         {
             InitializeComponent();
         }
+        
 
-        private void button1_Click(object sender, EventArgs e)
-        {
-            
-          
-        }
     }
 }
