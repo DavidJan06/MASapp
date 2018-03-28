@@ -1,0 +1,48 @@
+#dodajanje NOVE surovine
+
+INSERT INTO surovine (ime, kolicina)
+VALUES (ime, kolicina);
+
+#dodajanje k obstojeci surovini
+
+UPDATE surovine
+SET kolicina = kolicina + "dodana kolicina" WHERE ime LIKE "zbrana surovina"
+
+#ustvarjanje kategorije
+INSERT INTO kategorije (ime)
+VALUES (ime);
+
+#ustvarjanje izdelka
+
+SELECT ime FROM kategorije; (nafila combobox z imeni iz kategorij)
+
+INSERT INTO izdelki (ime, kategorija_id)
+VALUES (ime, (SELECT id FROM kategorije WHERE ime LIKE (izbrana kategorija iz comboboxa)));
+
+#dodajanje surovin k izdelku
+#potegne vn ime surovine
+
+SELECT ime FROM	 surovine; (tte lahka da v combobox)
+
+INSERT INTO izdelki_surovine (kolicina, surovina_id, izdelek_id)
+VALUES (napise kolicino v textbox, (SELECT id FROM surovine WHERE ime LIKE (zbrano ime iz comboboxa)), (SELECT id FROM izdelki WHERE ime LIKE (napise ime izdelka v combobox)));
+
+#podatki izdelka
+
+SELECT i.ime, s.ime, kolicina FROM izdelki_surovine is INNER JOIN surovine s ON s.id = su.surovina_id INNER JOIN izdelki i ON i.id = su.izdelek_id WHERE izdelek_id = (SELECT id FROM izdelki WHERE ime LIKE (izbran izdelek));
+
+#izracun porabe
+
+INSERT INTO poraba (surovina_id, kolicina)
+VALUES (SELECT surovina_id FROM izdelki_surovine WHERE izdelek_id LIKE (SELECT id FROM izdelki WHERE ime LIKE (izbran izdelek)), SELECT kolicina FROM izdelki_surovine WHERE izdelek_id LIKE (SELECT id FROM izdelki WHERE ime LIKE (izbran izdelek))
+
+#izpis porabe
+
+SELECT s.ime, kolicina FROM poraba p INNER JOIN surovine s ON s.id = p.surovina_id;
+
+
+
+
+
+
+
