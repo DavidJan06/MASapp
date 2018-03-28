@@ -40,6 +40,14 @@ VALUES (SELECT surovina_id FROM izdelki_surovine WHERE izdelek_id LIKE (SELECT i
 
 SELECT s.ime, kolicina FROM poraba p INNER JOIN surovine s ON s.id = p.surovina_id;
 
+#izbrisi
+
+DELETE FROM surovine WHERE ime LIKE (izbrana surovina);
+DELETE FROM kategorije WHERE ime LIKE (izbrana kategorija);
+DELETE FROM izdelki WHERE ime LIKE (izbran izdelek);
+DELETE FROM izdelki_surovine WHERE surovina_id = (SELECT id FROM surovine WHERE ime LIKE (izbrana surovina za odstranit))
+
+
 
 
 
