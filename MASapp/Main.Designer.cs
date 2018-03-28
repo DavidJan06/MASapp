@@ -39,9 +39,11 @@
             this.zalogaDGVp = new System.Windows.Forms.DataGridView();
             this.Vnos = new System.Windows.Forms.TabPage();
             this.groupBox6 = new System.Windows.Forms.GroupBox();
+            this.dodajPogledBv = new System.Windows.Forms.Button();
             this.vnosiCBv = new System.Windows.Forms.ComboBox();
             this.pregledVnosevDGVv = new System.Windows.Forms.DataGridView();
             this.groupBox5 = new System.Windows.Forms.GroupBox();
+            this.izbrišiPogledBv = new System.Windows.Forms.Button();
             this.pregledDGVv = new System.Windows.Forms.DataGridView();
             this.datumLv = new System.Windows.Forms.Label();
             this.shraniPogledBv = new System.Windows.Forms.Button();
@@ -65,8 +67,6 @@
             this.urediKategorijeBi = new System.Windows.Forms.Button();
             this.izbrisiKategorijeBi = new System.Windows.Forms.Button();
             this.kategorijeDGVi = new System.Windows.Forms.DataGridView();
-            this.dodajPogledBv = new System.Windows.Forms.Button();
-            this.izbrišiPogledBv = new System.Windows.Forms.Button();
             this.tabControl1.SuspendLayout();
             this.Pregled.SuspendLayout();
             this.groupBox2.SuspendLayout();
@@ -210,12 +210,21 @@
             this.groupBox6.Controls.Add(this.dodajPogledBv);
             this.groupBox6.Controls.Add(this.vnosiCBv);
             this.groupBox6.Controls.Add(this.pregledVnosevDGVv);
-            this.groupBox6.Location = new System.Drawing.Point(295, 264);
+            this.groupBox6.Location = new System.Drawing.Point(6, 266);
             this.groupBox6.Name = "groupBox6";
-            this.groupBox6.Size = new System.Drawing.Size(263, 250);
+            this.groupBox6.Size = new System.Drawing.Size(283, 250);
             this.groupBox6.TabIndex = 3;
             this.groupBox6.TabStop = false;
-            this.groupBox6.Text = "Pregled Vnosev";
+            this.groupBox6.Text = "Sestavine";
+            // 
+            // dodajPogledBv
+            // 
+            this.dodajPogledBv.Location = new System.Drawing.Point(6, 25);
+            this.dodajPogledBv.Name = "dodajPogledBv";
+            this.dodajPogledBv.Size = new System.Drawing.Size(84, 27);
+            this.dodajPogledBv.TabIndex = 2;
+            this.dodajPogledBv.Text = "Dodaj";
+            this.dodajPogledBv.UseVisualStyleBackColor = true;
             // 
             // vnosiCBv
             // 
@@ -230,7 +239,7 @@
             this.pregledVnosevDGVv.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
             this.pregledVnosevDGVv.Location = new System.Drawing.Point(6, 58);
             this.pregledVnosevDGVv.Name = "pregledVnosevDGVv";
-            this.pregledVnosevDGVv.Size = new System.Drawing.Size(251, 188);
+            this.pregledVnosevDGVv.Size = new System.Drawing.Size(271, 186);
             this.pregledVnosevDGVv.TabIndex = 0;
             // 
             // groupBox5
@@ -246,6 +255,15 @@
             this.groupBox5.TabIndex = 3;
             this.groupBox5.TabStop = false;
             this.groupBox5.Text = "Pogled";
+            // 
+            // izbrišiPogledBv
+            // 
+            this.izbrišiPogledBv.Location = new System.Drawing.Point(102, 23);
+            this.izbrišiPogledBv.Name = "izbrišiPogledBv";
+            this.izbrišiPogledBv.Size = new System.Drawing.Size(84, 28);
+            this.izbrišiPogledBv.TabIndex = 6;
+            this.izbrišiPogledBv.Text = "Izbriši";
+            this.izbrišiPogledBv.UseVisualStyleBackColor = true;
             // 
             // pregledDGVv
             // 
@@ -283,8 +301,10 @@
             // 
             // groupBox4
             // 
+            this.groupBox4.Controls.Add(this.NUDv);
             this.groupBox4.Controls.Add(this.label2);
             this.groupBox4.Controls.Add(this.sestavineIzdelkiDGVv);
+            this.groupBox4.Controls.Add(this.dodajIzdelekBv);
             this.groupBox4.Location = new System.Drawing.Point(295, 6);
             this.groupBox4.Name = "groupBox4";
             this.groupBox4.Size = new System.Drawing.Size(263, 252);
@@ -311,20 +331,18 @@
             // 
             // groupBox3
             // 
-            this.groupBox3.Controls.Add(this.NUDv);
             this.groupBox3.Controls.Add(this.izdelkiDGVv);
-            this.groupBox3.Controls.Add(this.dodajIzdelekBv);
             this.groupBox3.Controls.Add(this.kategorijeCBv);
             this.groupBox3.Location = new System.Drawing.Point(6, 6);
             this.groupBox3.Name = "groupBox3";
-            this.groupBox3.Size = new System.Drawing.Size(283, 510);
+            this.groupBox3.Size = new System.Drawing.Size(283, 252);
             this.groupBox3.TabIndex = 1;
             this.groupBox3.TabStop = false;
             this.groupBox3.Text = "Meni";
             // 
             // NUDv
             // 
-            this.NUDv.Location = new System.Drawing.Point(141, 28);
+            this.NUDv.Location = new System.Drawing.Point(121, 25);
             this.NUDv.Minimum = new decimal(new int[] {
             1,
             0,
@@ -353,12 +371,12 @@
             this.izdelkiDGVv.ReadOnly = true;
             this.izdelkiDGVv.RowHeadersVisible = false;
             this.izdelkiDGVv.SelectionMode = System.Windows.Forms.DataGridViewSelectionMode.FullRowSelect;
-            this.izdelkiDGVv.Size = new System.Drawing.Size(271, 446);
+            this.izdelkiDGVv.Size = new System.Drawing.Size(271, 186);
             this.izdelkiDGVv.TabIndex = 7;
             // 
             // dodajIzdelekBv
             // 
-            this.dodajIzdelekBv.Location = new System.Drawing.Point(193, 27);
+            this.dodajIzdelekBv.Location = new System.Drawing.Point(173, 25);
             this.dodajIzdelekBv.Name = "dodajIzdelekBv";
             this.dodajIzdelekBv.Size = new System.Drawing.Size(84, 28);
             this.dodajIzdelekBv.TabIndex = 6;
@@ -495,24 +513,6 @@
             this.kategorijeDGVi.Size = new System.Drawing.Size(404, 446);
             this.kategorijeDGVi.TabIndex = 0;
             this.kategorijeDGVi.CellMouseDoubleClick += new System.Windows.Forms.DataGridViewCellMouseEventHandler(this.kategorijeDGV_CellMouseDoubleClick);
-            // 
-            // dodajPogledBv
-            // 
-            this.dodajPogledBv.Location = new System.Drawing.Point(6, 25);
-            this.dodajPogledBv.Name = "dodajPogledBv";
-            this.dodajPogledBv.Size = new System.Drawing.Size(84, 27);
-            this.dodajPogledBv.TabIndex = 2;
-            this.dodajPogledBv.Text = "Dodaj";
-            this.dodajPogledBv.UseVisualStyleBackColor = true;
-            // 
-            // izbrišiPogledBv
-            // 
-            this.izbrišiPogledBv.Location = new System.Drawing.Point(102, 23);
-            this.izbrišiPogledBv.Name = "izbrišiPogledBv";
-            this.izbrišiPogledBv.Size = new System.Drawing.Size(84, 28);
-            this.izbrišiPogledBv.TabIndex = 6;
-            this.izbrišiPogledBv.Text = "Izbriši";
-            this.izbrišiPogledBv.UseVisualStyleBackColor = true;
             // 
             // Main
             // 
