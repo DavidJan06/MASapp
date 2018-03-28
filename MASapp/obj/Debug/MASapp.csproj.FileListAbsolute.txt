@@ -58,7 +58,6 @@ E:\4.Letnik\RPA\MASapp\MASapp\bin\Debug\EntityFramework.SqlServer.xml
 E:\4.Letnik\RPA\MASapp\MASapp\bin\Debug\System.Data.SQLite.xml
 E:\4.Letnik\RPA\MASapp\MASapp\bin\Debug\System.Data.SQLite.dll.config
 E:\4.Letnik\RPA\MASapp\MASapp\obj\Debug\MASapp.csprojResolveAssemblyReference.cache
-E:\4.Letnik\RPA\MASapp\MASapp\obj\Debug\MASapp.dodajanje_surovine.resources
 E:\4.Letnik\RPA\MASapp\MASapp\obj\Debug\MASapp.Main.resources
 E:\4.Letnik\RPA\MASapp\MASapp\obj\Debug\MASapp.Properties.Resources.resources
 E:\4.Letnik\RPA\MASapp\MASapp\obj\Debug\MASapp.csproj.GenerateResource.cache
@@ -67,3 +66,4 @@ E:\4.Letnik\RPA\MASapp\MASapp\obj\Debug\MASapp.csproj.CopyComplete
 E:\4.Letnik\RPA\MASapp\MASapp\obj\Debug\MASapp.exe
 E:\4.Letnik\RPA\MASapp\MASapp\obj\Debug\MASapp.pdb
 F:\4.Letnik\RPA\MASapp\MASapp\obj\Debug\MASapp.DodajSurovine.resources
+E:\4.Letnik\RPA\MASapp\MASapp\obj\Debug\MASapp.DodajSurovine.resources

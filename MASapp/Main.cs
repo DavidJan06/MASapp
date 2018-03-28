@@ -21,7 +21,7 @@ namespace MASapp
 
         void Refresh() {
 
-            string ZalogaStr = "Select ime, kolicina FROM Izdelki WHERE id_kategorija = 1";
+            string ZalogaStr = "Select ime, kolicina FROM surovine";
             HelperFunctions.GetDataInDGV(ZalogaStr, zalogaDGVp);
 
             string KategorijeStr = "Select ime, opis FROM Kategorije";
