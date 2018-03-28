@@ -48,6 +48,12 @@ DELETE FROM izdelki WHERE ime LIKE (izbran izdelek);
 DELETE FROM izdelki_surovine WHERE surovina_id = (SELECT id FROM surovine WHERE ime LIKE (izbrana surovina za odstranit))
 
 
+#posodobitev kolicine surovine izdelka
+
+UPDATE izdelki_surovine SET 
+kolicina = (textbox kolicine) WHERE surovina_id = (SELECT id FROM surovine WHERE ime LIKE (izbrana surovina)) AND izdelek_id = (SELECT id FROM izdelki WHERE ime LIKE (izbran izdelek))
+
+
 
 
 
