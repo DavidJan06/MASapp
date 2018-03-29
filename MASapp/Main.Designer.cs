@@ -40,7 +40,6 @@
             this.zalogaDGVp = new System.Windows.Forms.DataGridView();
             this.Vnos = new System.Windows.Forms.TabPage();
             this.groupBox6 = new System.Windows.Forms.GroupBox();
-            this.pregledVnosevDGVv = new System.Windows.Forms.DataGridView();
             this.groupBox5 = new System.Windows.Forms.GroupBox();
             this.izbrišiPogledBv = new System.Windows.Forms.Button();
             this.pregledDGVv = new System.Windows.Forms.DataGridView();
@@ -48,32 +47,31 @@
             this.shraniPogledBv = new System.Windows.Forms.Button();
             this.porabaDGVv = new System.Windows.Forms.DataGridView();
             this.groupBox4 = new System.Windows.Forms.GroupBox();
-            this.sestavineIzdelkiDGVv = new System.Windows.Forms.DataGridView();
             this.groupBox3 = new System.Windows.Forms.GroupBox();
             this.izdelkiDGVv = new System.Windows.Forms.DataGridView();
             this.kategorijeCBv = new System.Windows.Forms.ComboBox();
             this.Izdelki = new System.Windows.Forms.TabPage();
             this.groupBox8 = new System.Windows.Forms.GroupBox();
             this.dodajIzdelkiBi = new System.Windows.Forms.Button();
-            this.urediIzdelkiBi = new System.Windows.Forms.Button();
-            this.izbrisiIzdelkiBi = new System.Windows.Forms.Button();
             this.izdelkiDGVi = new System.Windows.Forms.DataGridView();
             this.groupBox7 = new System.Windows.Forms.GroupBox();
             this.dodajKategorijeBi = new System.Windows.Forms.Button();
-            this.urediKategorijeBi = new System.Windows.Forms.Button();
-            this.izbrisiKategorijeBi = new System.Windows.Forms.Button();
             this.kategorijeDGVi = new System.Windows.Forms.DataGridView();
-            this.button1 = new System.Windows.Forms.Button();
-            this.textBox1 = new System.Windows.Forms.TextBox();
+            this.dodajSurovineBv = new System.Windows.Forms.Button();
+            this.kolicinaBv = new System.Windows.Forms.TextBox();
             this.label1 = new System.Windows.Forms.Label();
             this.groupBox9 = new System.Windows.Forms.GroupBox();
             this.NUDv = new System.Windows.Forms.NumericUpDown();
             this.label2 = new System.Windows.Forms.Label();
             this.dodajIzdelekBv = new System.Windows.Forms.Button();
             this.button2 = new System.Windows.Forms.Button();
-            this.label3 = new System.Windows.Forms.Label();
+            this.imeIzdelkaLv = new System.Windows.Forms.Label();
             this.button3 = new System.Windows.Forms.Button();
             this.button4 = new System.Windows.Forms.Button();
+            this.button5 = new System.Windows.Forms.Button();
+            this.button6 = new System.Windows.Forms.Button();
+            this.surovineDGVv = new System.Windows.Forms.DataGridView();
+            this.sestavineIzdelkaDGVv = new System.Windows.Forms.DataGridView();
             this.tabControl1.SuspendLayout();
             this.Pregled.SuspendLayout();
             this.groupBox2.SuspendLayout();
@@ -82,12 +80,10 @@
             ((System.ComponentModel.ISupportInitialize)(this.zalogaDGVp)).BeginInit();
             this.Vnos.SuspendLayout();
             this.groupBox6.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.pregledVnosevDGVv)).BeginInit();
             this.groupBox5.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pregledDGVv)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.porabaDGVv)).BeginInit();
             this.groupBox4.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.sestavineIzdelkiDGVv)).BeginInit();
             this.groupBox3.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.izdelkiDGVv)).BeginInit();
             this.Izdelki.SuspendLayout();
@@ -97,6 +93,8 @@
             ((System.ComponentModel.ISupportInitialize)(this.kategorijeDGVi)).BeginInit();
             this.groupBox9.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.NUDv)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.surovineDGVv)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.sestavineIzdelkaDGVv)).BeginInit();
             this.SuspendLayout();
             // 
             // tabControl1
@@ -216,24 +214,16 @@
             // 
             // groupBox6
             // 
+            this.groupBox6.Controls.Add(this.surovineDGVv);
             this.groupBox6.Controls.Add(this.label1);
-            this.groupBox6.Controls.Add(this.textBox1);
-            this.groupBox6.Controls.Add(this.button1);
-            this.groupBox6.Controls.Add(this.pregledVnosevDGVv);
+            this.groupBox6.Controls.Add(this.kolicinaBv);
+            this.groupBox6.Controls.Add(this.dodajSurovineBv);
             this.groupBox6.Location = new System.Drawing.Point(8, 263);
             this.groupBox6.Name = "groupBox6";
             this.groupBox6.Size = new System.Drawing.Size(281, 250);
             this.groupBox6.TabIndex = 3;
             this.groupBox6.TabStop = false;
             this.groupBox6.Text = "Surovine";
-            // 
-            // pregledVnosevDGVv
-            // 
-            this.pregledVnosevDGVv.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            this.pregledVnosevDGVv.Location = new System.Drawing.Point(6, 52);
-            this.pregledVnosevDGVv.Name = "pregledVnosevDGVv";
-            this.pregledVnosevDGVv.Size = new System.Drawing.Size(269, 192);
-            this.pregledVnosevDGVv.TabIndex = 0;
             // 
             // groupBox5
             // 
@@ -294,23 +284,15 @@
             // 
             // groupBox4
             // 
-            this.groupBox4.Controls.Add(this.label3);
+            this.groupBox4.Controls.Add(this.sestavineIzdelkaDGVv);
+            this.groupBox4.Controls.Add(this.imeIzdelkaLv);
             this.groupBox4.Controls.Add(this.button2);
-            this.groupBox4.Controls.Add(this.sestavineIzdelkiDGVv);
             this.groupBox4.Location = new System.Drawing.Point(295, 116);
             this.groupBox4.Name = "groupBox4";
             this.groupBox4.Size = new System.Drawing.Size(263, 397);
             this.groupBox4.TabIndex = 2;
             this.groupBox4.TabStop = false;
             this.groupBox4.Text = "Sestavine";
-            // 
-            // sestavineIzdelkiDGVv
-            // 
-            this.sestavineIzdelkiDGVv.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            this.sestavineIzdelkiDGVv.Location = new System.Drawing.Point(6, 59);
-            this.sestavineIzdelkiDGVv.Name = "sestavineIzdelkiDGVv";
-            this.sestavineIzdelkiDGVv.Size = new System.Drawing.Size(251, 332);
-            this.sestavineIzdelkiDGVv.TabIndex = 0;
             // 
             // groupBox3
             // 
@@ -339,6 +321,7 @@
             this.izdelkiDGVv.SelectionMode = System.Windows.Forms.DataGridViewSelectionMode.FullRowSelect;
             this.izdelkiDGVv.Size = new System.Drawing.Size(269, 189);
             this.izdelkiDGVv.TabIndex = 7;
+            this.izdelkiDGVv.CellMouseDoubleClick += new System.Windows.Forms.DataGridViewCellMouseEventHandler(this.izdelkiDGVv_CellMouseDoubleClick);
             // 
             // kategorijeCBv
             // 
@@ -351,6 +334,8 @@
             // 
             // Izdelki
             // 
+            this.Izdelki.Controls.Add(this.button6);
+            this.Izdelki.Controls.Add(this.button5);
             this.Izdelki.Controls.Add(this.groupBox8);
             this.Izdelki.Controls.Add(this.groupBox7);
             this.Izdelki.Location = new System.Drawing.Point(4, 29);
@@ -364,8 +349,6 @@
             // groupBox8
             // 
             this.groupBox8.Controls.Add(this.dodajIzdelkiBi);
-            this.groupBox8.Controls.Add(this.urediIzdelkiBi);
-            this.groupBox8.Controls.Add(this.izbrisiIzdelkiBi);
             this.groupBox8.Controls.Add(this.izdelkiDGVi);
             this.groupBox8.Location = new System.Drawing.Point(428, 6);
             this.groupBox8.Name = "groupBox8";
@@ -376,30 +359,12 @@
             // 
             // dodajIzdelkiBi
             // 
-            this.dodajIzdelkiBi.Location = new System.Drawing.Point(146, 18);
+            this.dodajIzdelkiBi.Location = new System.Drawing.Point(326, 18);
             this.dodajIzdelkiBi.Name = "dodajIzdelkiBi";
             this.dodajIzdelkiBi.Size = new System.Drawing.Size(84, 28);
             this.dodajIzdelkiBi.TabIndex = 3;
             this.dodajIzdelkiBi.Text = "Dodaj";
             this.dodajIzdelkiBi.UseVisualStyleBackColor = true;
-            // 
-            // urediIzdelkiBi
-            // 
-            this.urediIzdelkiBi.Location = new System.Drawing.Point(236, 18);
-            this.urediIzdelkiBi.Name = "urediIzdelkiBi";
-            this.urediIzdelkiBi.Size = new System.Drawing.Size(84, 28);
-            this.urediIzdelkiBi.TabIndex = 2;
-            this.urediIzdelkiBi.Text = "Uredi";
-            this.urediIzdelkiBi.UseVisualStyleBackColor = true;
-            // 
-            // izbrisiIzdelkiBi
-            // 
-            this.izbrisiIzdelkiBi.Location = new System.Drawing.Point(326, 18);
-            this.izbrisiIzdelkiBi.Name = "izbrisiIzdelkiBi";
-            this.izbrisiIzdelkiBi.Size = new System.Drawing.Size(84, 28);
-            this.izbrisiIzdelkiBi.TabIndex = 1;
-            this.izbrisiIzdelkiBi.Text = "Izbriši";
-            this.izbrisiIzdelkiBi.UseVisualStyleBackColor = true;
             // 
             // izdelkiDGVi
             // 
@@ -414,46 +379,27 @@
             this.izdelkiDGVi.SelectionMode = System.Windows.Forms.DataGridViewSelectionMode.FullRowSelect;
             this.izdelkiDGVi.Size = new System.Drawing.Size(404, 452);
             this.izdelkiDGVi.TabIndex = 0;
+            this.izdelkiDGVi.CellContentDoubleClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.izdelkiDGVi_CellContentDoubleClick);
             // 
             // groupBox7
             // 
             this.groupBox7.Controls.Add(this.dodajKategorijeBi);
-            this.groupBox7.Controls.Add(this.urediKategorijeBi);
-            this.groupBox7.Controls.Add(this.izbrisiKategorijeBi);
             this.groupBox7.Controls.Add(this.kategorijeDGVi);
-            this.groupBox7.Location = new System.Drawing.Point(6, 6);
+            this.groupBox7.Location = new System.Drawing.Point(6, 40);
             this.groupBox7.Name = "groupBox7";
-            this.groupBox7.Size = new System.Drawing.Size(416, 510);
+            this.groupBox7.Size = new System.Drawing.Size(416, 476);
             this.groupBox7.TabIndex = 1;
             this.groupBox7.TabStop = false;
             this.groupBox7.Text = "Kategorije";
             // 
             // dodajKategorijeBi
             // 
-            this.dodajKategorijeBi.Location = new System.Drawing.Point(146, 18);
+            this.dodajKategorijeBi.Location = new System.Drawing.Point(326, 18);
             this.dodajKategorijeBi.Name = "dodajKategorijeBi";
             this.dodajKategorijeBi.Size = new System.Drawing.Size(84, 28);
             this.dodajKategorijeBi.TabIndex = 3;
             this.dodajKategorijeBi.Text = "Dodaj";
             this.dodajKategorijeBi.UseVisualStyleBackColor = true;
-            // 
-            // urediKategorijeBi
-            // 
-            this.urediKategorijeBi.Location = new System.Drawing.Point(236, 18);
-            this.urediKategorijeBi.Name = "urediKategorijeBi";
-            this.urediKategorijeBi.Size = new System.Drawing.Size(84, 28);
-            this.urediKategorijeBi.TabIndex = 2;
-            this.urediKategorijeBi.Text = "Uredi";
-            this.urediKategorijeBi.UseVisualStyleBackColor = true;
-            // 
-            // izbrisiKategorijeBi
-            // 
-            this.izbrisiKategorijeBi.Location = new System.Drawing.Point(326, 18);
-            this.izbrisiKategorijeBi.Name = "izbrisiKategorijeBi";
-            this.izbrisiKategorijeBi.Size = new System.Drawing.Size(84, 28);
-            this.izbrisiKategorijeBi.TabIndex = 1;
-            this.izbrisiKategorijeBi.Text = "Izbriši";
-            this.izbrisiKategorijeBi.UseVisualStyleBackColor = true;
             // 
             // kategorijeDGVi
             // 
@@ -467,34 +413,36 @@
             this.kategorijeDGVi.ReadOnly = true;
             this.kategorijeDGVi.RowHeadersVisible = false;
             this.kategorijeDGVi.SelectionMode = System.Windows.Forms.DataGridViewSelectionMode.FullRowSelect;
-            this.kategorijeDGVi.Size = new System.Drawing.Size(404, 452);
+            this.kategorijeDGVi.Size = new System.Drawing.Size(404, 418);
             this.kategorijeDGVi.TabIndex = 0;
+            this.kategorijeDGVi.CellMouseClick += new System.Windows.Forms.DataGridViewCellMouseEventHandler(this.kategorijeDGVi_CellMouseClick);
             this.kategorijeDGVi.CellMouseDoubleClick += new System.Windows.Forms.DataGridViewCellMouseEventHandler(this.kategorijeDGV_CellMouseDoubleClick);
             // 
-            // button1
+            // dodajSurovineBv
             // 
-            this.button1.Location = new System.Drawing.Point(191, 18);
-            this.button1.Name = "button1";
-            this.button1.Size = new System.Drawing.Size(84, 28);
-            this.button1.TabIndex = 9;
-            this.button1.Text = "Dodaj ->";
-            this.button1.UseVisualStyleBackColor = true;
+            this.dodajSurovineBv.Location = new System.Drawing.Point(191, 18);
+            this.dodajSurovineBv.Name = "dodajSurovineBv";
+            this.dodajSurovineBv.Size = new System.Drawing.Size(84, 28);
+            this.dodajSurovineBv.TabIndex = 9;
+            this.dodajSurovineBv.Text = "Dodaj ->";
+            this.dodajSurovineBv.UseVisualStyleBackColor = true;
+            this.dodajSurovineBv.Click += new System.EventHandler(this.dodajSurovineBv_Click);
             // 
-            // textBox1
+            // kolicinaBv
             // 
-            this.textBox1.Location = new System.Drawing.Point(130, 18);
-            this.textBox1.Name = "textBox1";
-            this.textBox1.Size = new System.Drawing.Size(55, 26);
-            this.textBox1.TabIndex = 10;
+            this.kolicinaBv.Location = new System.Drawing.Point(130, 18);
+            this.kolicinaBv.Name = "kolicinaBv";
+            this.kolicinaBv.Size = new System.Drawing.Size(55, 26);
+            this.kolicinaBv.TabIndex = 10;
             // 
             // label1
             // 
             this.label1.AutoSize = true;
-            this.label1.Location = new System.Drawing.Point(60, 21);
+            this.label1.Location = new System.Drawing.Point(41, 21);
             this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(67, 20);
+            this.label1.Size = new System.Drawing.Size(86, 20);
             this.label1.TabIndex = 11;
-            this.label1.Text = "Količina:";
+            this.label1.Text = "Količina(g):";
             // 
             // groupBox9
             // 
@@ -554,14 +502,14 @@
             this.button2.Text = "Odstrani";
             this.button2.UseVisualStyleBackColor = true;
             // 
-            // label3
+            // imeIzdelkaLv
             // 
-            this.label3.AutoSize = true;
-            this.label3.Location = new System.Drawing.Point(6, 29);
-            this.label3.Name = "label3";
-            this.label3.Size = new System.Drawing.Size(91, 20);
-            this.label3.TabIndex = 19;
-            this.label3.Text = "Ime Izdelka";
+            this.imeIzdelkaLv.AutoSize = true;
+            this.imeIzdelkaLv.Location = new System.Drawing.Point(6, 29);
+            this.imeIzdelkaLv.Name = "imeIzdelkaLv";
+            this.imeIzdelkaLv.Size = new System.Drawing.Size(91, 20);
+            this.imeIzdelkaLv.TabIndex = 19;
+            this.imeIzdelkaLv.Text = "Ime Izdelka";
             // 
             // button3
             // 
@@ -580,6 +528,57 @@
             this.button4.TabIndex = 20;
             this.button4.Text = "Uredi";
             this.button4.UseVisualStyleBackColor = true;
+            // 
+            // button5
+            // 
+            this.button5.Location = new System.Drawing.Point(6, 6);
+            this.button5.Name = "button5";
+            this.button5.Size = new System.Drawing.Size(84, 28);
+            this.button5.TabIndex = 4;
+            this.button5.Text = "Uvozi";
+            this.button5.UseVisualStyleBackColor = true;
+            // 
+            // button6
+            // 
+            this.button6.Location = new System.Drawing.Point(96, 6);
+            this.button6.Name = "button6";
+            this.button6.Size = new System.Drawing.Size(84, 28);
+            this.button6.TabIndex = 5;
+            this.button6.Text = "Izvozi";
+            this.button6.UseVisualStyleBackColor = true;
+            // 
+            // surovineDGVv
+            // 
+            this.surovineDGVv.AllowUserToAddRows = false;
+            this.surovineDGVv.AllowUserToDeleteRows = false;
+            this.surovineDGVv.AllowUserToResizeColumns = false;
+            this.surovineDGVv.AllowUserToResizeRows = false;
+            this.surovineDGVv.AutoSizeColumnsMode = System.Windows.Forms.DataGridViewAutoSizeColumnsMode.Fill;
+            this.surovineDGVv.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
+            this.surovineDGVv.Location = new System.Drawing.Point(6, 52);
+            this.surovineDGVv.MultiSelect = false;
+            this.surovineDGVv.Name = "surovineDGVv";
+            this.surovineDGVv.ReadOnly = true;
+            this.surovineDGVv.RowHeadersVisible = false;
+            this.surovineDGVv.SelectionMode = System.Windows.Forms.DataGridViewSelectionMode.FullRowSelect;
+            this.surovineDGVv.Size = new System.Drawing.Size(269, 189);
+            this.surovineDGVv.TabIndex = 8;
+            // 
+            // sestavineIzdelkaDGVv
+            // 
+            this.sestavineIzdelkaDGVv.AllowUserToDeleteRows = false;
+            this.sestavineIzdelkaDGVv.AllowUserToResizeColumns = false;
+            this.sestavineIzdelkaDGVv.AllowUserToResizeRows = false;
+            this.sestavineIzdelkaDGVv.AutoSizeColumnsMode = System.Windows.Forms.DataGridViewAutoSizeColumnsMode.Fill;
+            this.sestavineIzdelkaDGVv.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
+            this.sestavineIzdelkaDGVv.Location = new System.Drawing.Point(6, 59);
+            this.sestavineIzdelkaDGVv.MultiSelect = false;
+            this.sestavineIzdelkaDGVv.Name = "sestavineIzdelkaDGVv";
+            this.sestavineIzdelkaDGVv.ReadOnly = true;
+            this.sestavineIzdelkaDGVv.RowHeadersVisible = false;
+            this.sestavineIzdelkaDGVv.SelectionMode = System.Windows.Forms.DataGridViewSelectionMode.FullRowSelect;
+            this.sestavineIzdelkaDGVv.Size = new System.Drawing.Size(251, 329);
+            this.sestavineIzdelkaDGVv.TabIndex = 8;
             // 
             // Main
             // 
@@ -603,14 +602,12 @@
             this.Vnos.ResumeLayout(false);
             this.groupBox6.ResumeLayout(false);
             this.groupBox6.PerformLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.pregledVnosevDGVv)).EndInit();
             this.groupBox5.ResumeLayout(false);
             this.groupBox5.PerformLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pregledDGVv)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.porabaDGVv)).EndInit();
             this.groupBox4.ResumeLayout(false);
             this.groupBox4.PerformLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.sestavineIzdelkiDGVv)).EndInit();
             this.groupBox3.ResumeLayout(false);
             ((System.ComponentModel.ISupportInitialize)(this.izdelkiDGVv)).EndInit();
             this.Izdelki.ResumeLayout(false);
@@ -621,6 +618,8 @@
             this.groupBox9.ResumeLayout(false);
             this.groupBox9.PerformLayout();
             ((System.ComponentModel.ISupportInitialize)(this.NUDv)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.surovineDGVv)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.sestavineIzdelkaDGVv)).EndInit();
             this.ResumeLayout(false);
 
         }
@@ -638,32 +637,26 @@
         private System.Windows.Forms.DataGridView zalogaDGVp;
         private System.Windows.Forms.TabPage Vnos;
         private System.Windows.Forms.GroupBox groupBox6;
-        private System.Windows.Forms.DataGridView pregledVnosevDGVv;
         private System.Windows.Forms.GroupBox groupBox5;
         private System.Windows.Forms.DataGridView pregledDGVv;
         private System.Windows.Forms.Label datumLv;
         private System.Windows.Forms.Button shraniPogledBv;
         private System.Windows.Forms.DataGridView porabaDGVv;
         private System.Windows.Forms.GroupBox groupBox4;
-        private System.Windows.Forms.DataGridView sestavineIzdelkiDGVv;
         private System.Windows.Forms.GroupBox groupBox3;
         private System.Windows.Forms.ComboBox kategorijeCBv;
         private System.Windows.Forms.TabPage Izdelki;
         private System.Windows.Forms.GroupBox groupBox8;
-        private System.Windows.Forms.Button izbrisiIzdelkiBi;
         private System.Windows.Forms.DataGridView izdelkiDGVi;
         private System.Windows.Forms.GroupBox groupBox7;
-        private System.Windows.Forms.Button izbrisiKategorijeBi;
         private System.Windows.Forms.DataGridView kategorijeDGVi;
         private System.Windows.Forms.Button dodajIzdelkiBi;
-        private System.Windows.Forms.Button urediIzdelkiBi;
         private System.Windows.Forms.Button dodajKategorijeBi;
-        private System.Windows.Forms.Button urediKategorijeBi;
         private System.Windows.Forms.DataGridView izdelkiDGVv;
         private System.Windows.Forms.Button izbrišiPogledBv;
-        private System.Windows.Forms.Button button1;
+        private System.Windows.Forms.Button dodajSurovineBv;
         private System.Windows.Forms.Label label1;
-        private System.Windows.Forms.TextBox textBox1;
+        private System.Windows.Forms.TextBox kolicinaBv;
         private System.Windows.Forms.GroupBox groupBox9;
         private System.Windows.Forms.NumericUpDown NUDv;
         private System.Windows.Forms.Label label2;
@@ -671,7 +664,11 @@
         private System.Windows.Forms.Button button2;
         private System.Windows.Forms.Button button4;
         private System.Windows.Forms.Button button3;
-        private System.Windows.Forms.Label label3;
+        private System.Windows.Forms.Label imeIzdelkaLv;
+        private System.Windows.Forms.Button button6;
+        private System.Windows.Forms.Button button5;
+        private System.Windows.Forms.DataGridView surovineDGVv;
+        private System.Windows.Forms.DataGridView sestavineIzdelkaDGVv;
     }
 }
 

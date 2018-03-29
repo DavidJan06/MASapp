@@ -19,12 +19,15 @@ namespace MASapp
             Refresh();
         }
 
-        void Refresh() {
+        public void Refresh() {
 
             string ZalogaStr = "Select ime, kolicina FROM surovine";
             HelperFunctions.GetDataInDGV(ZalogaStr, zalogaDGVp);
 
-            string KategorijeStr = "Select ime, opis FROM Kategorije";
+            string SurovineStr = "Select ime FROM surovine";
+            HelperFunctions.GetDataInDGV(SurovineStr, surovineDGVv);
+
+            string KategorijeStr = "Select ime, opis FROM kategorije";
             HelperFunctions.GetDataInDGV(KategorijeStr, kategorijeDGVi);
 
             HelperFunctions.GetDataInCB(KategorijeStr, kategorijeCBv, 0);
@@ -49,8 +52,40 @@ namespace MASapp
 
         private void comboBox2_SelectedIndexChanged(object sender, EventArgs e)
         {
-            string Meni = "SELECT ime FROM Izdelki WHERE id_kategorija = (SELECT id_kategorija FROM Kategorije WHERE ime = '" + kategorijeCBv.SelectedItem.ToString() + "')";
+            string Meni = "SELECT ime FROM izdelki WHERE kategorija_id = (SELECT id FROM kategorije WHERE ime = '" + kategorijeCBv.SelectedItem.ToString() + "')";
             HelperFunctions.GetDataInDGV(Meni, izdelkiDGVv);
+        }
+
+        private void izdelkiDGVv_CellMouseDoubleClick(object sender, DataGridViewCellMouseEventArgs e)
+        {
+            string Izdelki = "SELECT s.ime AS 'Surovina', k.kolicina AS 'Količina(g)' FROM izdelki_surovine k INNER JOIN surovine s ON s.id = k.surovina_id WHERE izdelek_id = (SELECT id FROM izdelki WHERE ime LIKE '" + izdelkiDGVv.SelectedCells[0].Value.ToString() + "')";
+            HelperFunctions.GetDataInDGV(Izdelki, sestavineIzdelkaDGVv);
+        }
+
+        private void dodajSurovineBv_Click(object sender, EventArgs e)
+        {
+            if (kolicinaBv.Text != "")
+            {
+                if (float.TryParse(kolicinaBv.Text, out float n))
+                {
+                    /*var index = sestavineIzdelkaDGVv.Rows.Add();
+                    sestavineIzdelkaDGVv.Rows[index].Cells[0].Value = surovineDGVv.SelectedCells[0].Value.ToString();
+                    sestavineIzdelkaDGVv.Rows[index].Cells[1].Value = n.ToString();
+
+                    /*DataGridViewRow row = (DataGridViewRow)sestavineIzdelkaDGVv.Rows[0].Clone();
+                    row.Cells[0].Value = surovineDGVv.SelectedCells[0].Value.ToString();
+                    row.Cells[1].Value = n.ToString();
+                    sestavineIzdelkaDGVv.Rows.Add(row);*/
+                }
+                else
+                {
+                    MessageBox.Show("Vnesite število!");
+                }
+            }
+            else
+            {
+                MessageBox.Show("Vnesite količino!");
+            }
         }
 
         #endregion
@@ -59,10 +94,21 @@ namespace MASapp
 
         private void kategorijeDGV_CellMouseDoubleClick(object sender, DataGridViewCellMouseEventArgs e)
         {
-            string Izdelki = "SELECT ime FROM Izdelki WHERE id_kategorija = (SELECT id_kategorija FROM Kategorije WHERE ime = '" + kategorijeDGVi.SelectedCells[0].Value.ToString() + "')";
+            
+        }
+
+        private void kategorijeDGVi_CellMouseClick(object sender, DataGridViewCellMouseEventArgs e)
+        {
+            string Izdelki = "SELECT ime FROM izdelki WHERE kategorija_id = (SELECT id FROM kategorije WHERE ime = '" + kategorijeDGVi.SelectedCells[0].Value.ToString() + "')";
             HelperFunctions.GetDataInDGV(Izdelki, izdelkiDGVi);
         }
 
+        private void izdelkiDGVi_CellContentDoubleClick(object sender, DataGridViewCellEventArgs e)
+        {
+
+        }
         #endregion
+
+
     }
 }
