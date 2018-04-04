@@ -17,8 +17,18 @@ namespace MASapp
         public DodajSurovine()
         {
             InitializeComponent();
+            refresh();
         }
-        
 
+        void refresh()
+        {
+            string getSurovine = "Select ime FROM surovine";
+            HelperFunctions.GetDataInCB(getSurovine, surovineCBds, 0);
+        }
+
+        private void dodajBds_Click(object sender, EventArgs e)
+        {
+            MessageBox.Show("OK");
+        }
     }
 }

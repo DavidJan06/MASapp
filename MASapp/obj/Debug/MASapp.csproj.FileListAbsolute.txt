@@ -67,3 +67,4 @@ E:\4.Letnik\RPA\MASapp\MASapp\obj\Debug\MASapp.exe
 E:\4.Letnik\RPA\MASapp\MASapp\obj\Debug\MASapp.pdb
 F:\4.Letnik\RPA\MASapp\MASapp\obj\Debug\MASapp.DodajSurovine.resources
 E:\4.Letnik\RPA\MASapp\MASapp\obj\Debug\MASapp.DodajSurovine.resources
+E:\4.Letnik\RPA\MASapp\MASapp\obj\Debug\MASapp.UrediZbrisi.resources

@@ -28,58 +28,75 @@
         /// </summary>
         private void InitializeComponent()
         {
-            this.shraniBds = new System.Windows.Forms.Button();
-            this.zalogaDGVp = new System.Windows.Forms.DataGridView();
-            ((System.ComponentModel.ISupportInitialize)(this.zalogaDGVp)).BeginInit();
+            this.dodajBds = new System.Windows.Forms.Button();
+            this.surovineCBds = new System.Windows.Forms.ComboBox();
+            this.steviloTBds = new System.Windows.Forms.TextBox();
+            this.label1 = new System.Windows.Forms.Label();
             this.SuspendLayout();
             // 
-            // shraniBds
+            // dodajBds
             // 
-            this.shraniBds.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(238)));
-            this.shraniBds.Location = new System.Drawing.Point(12, 12);
-            this.shraniBds.Name = "shraniBds";
-            this.shraniBds.Size = new System.Drawing.Size(136, 28);
-            this.shraniBds.TabIndex = 2;
-            this.shraniBds.Text = "Shrani";
-            this.shraniBds.UseVisualStyleBackColor = true;
+            this.dodajBds.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(238)));
+            this.dodajBds.Location = new System.Drawing.Point(285, 11);
+            this.dodajBds.Name = "dodajBds";
+            this.dodajBds.Size = new System.Drawing.Size(99, 28);
+            this.dodajBds.TabIndex = 2;
+            this.dodajBds.Text = "Dodaj";
+            this.dodajBds.UseVisualStyleBackColor = true;
+            this.dodajBds.Click += new System.EventHandler(this.dodajBds_Click);
             // 
-            // zalogaDGVp
+            // surovineCBds
             // 
-            this.zalogaDGVp.AllowUserToAddRows = false;
-            this.zalogaDGVp.AllowUserToDeleteRows = false;
-            this.zalogaDGVp.AllowUserToResizeColumns = false;
-            this.zalogaDGVp.AllowUserToResizeRows = false;
-            this.zalogaDGVp.AutoSizeColumnsMode = System.Windows.Forms.DataGridViewAutoSizeColumnsMode.Fill;
-            this.zalogaDGVp.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            this.zalogaDGVp.Location = new System.Drawing.Point(12, 46);
-            this.zalogaDGVp.MultiSelect = false;
-            this.zalogaDGVp.Name = "zalogaDGVp";
-            this.zalogaDGVp.RowHeadersVisible = false;
-            this.zalogaDGVp.SelectionMode = System.Windows.Forms.DataGridViewSelectionMode.FullRowSelect;
-            this.zalogaDGVp.Size = new System.Drawing.Size(404, 283);
-            this.zalogaDGVp.TabIndex = 3;
+            this.surovineCBds.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(238)));
+            this.surovineCBds.FormattingEnabled = true;
+            this.surovineCBds.Location = new System.Drawing.Point(12, 12);
+            this.surovineCBds.Name = "surovineCBds";
+            this.surovineCBds.Size = new System.Drawing.Size(121, 28);
+            this.surovineCBds.TabIndex = 3;
+            // 
+            // steviloTBds
+            // 
+            this.steviloTBds.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(238)));
+            this.steviloTBds.Location = new System.Drawing.Point(212, 12);
+            this.steviloTBds.Name = "steviloTBds";
+            this.steviloTBds.Size = new System.Drawing.Size(67, 26);
+            this.steviloTBds.TabIndex = 4;
+            // 
+            // label1
+            // 
+            this.label1.AutoSize = true;
+            this.label1.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(238)));
+            this.label1.Location = new System.Drawing.Point(139, 15);
+            this.label1.Name = "label1";
+            this.label1.Size = new System.Drawing.Size(67, 20);
+            this.label1.TabIndex = 5;
+            this.label1.Text = "Količina:";
             // 
             // DodajSurovine
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(428, 345);
-            this.Controls.Add(this.zalogaDGVp);
-            this.Controls.Add(this.shraniBds);
-            this.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.ClientSize = new System.Drawing.Size(395, 58);
+            this.Controls.Add(this.label1);
+            this.Controls.Add(this.steviloTBds);
+            this.Controls.Add(this.surovineCBds);
+            this.Controls.Add(this.dodajBds);
+            this.Margin = new System.Windows.Forms.Padding(2);
             this.MaximizeBox = false;
             this.MinimizeBox = false;
             this.Name = "DodajSurovine";
             this.ShowIcon = false;
             this.SizeGripStyle = System.Windows.Forms.SizeGripStyle.Show;
             this.Text = "DodajSurovine";
-            ((System.ComponentModel.ISupportInitialize)(this.zalogaDGVp)).EndInit();
             this.ResumeLayout(false);
+            this.PerformLayout();
 
         }
 
         #endregion
-        private System.Windows.Forms.Button shraniBds;
-        private System.Windows.Forms.DataGridView zalogaDGVp;
+        private System.Windows.Forms.Button dodajBds;
+        private System.Windows.Forms.ComboBox surovineCBds;
+        private System.Windows.Forms.TextBox steviloTBds;
+        private System.Windows.Forms.Label label1;
     }
 }

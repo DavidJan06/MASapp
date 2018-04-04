@@ -16,10 +16,10 @@ namespace MASapp
         public Main()
         {
             InitializeComponent();
-            Refresh();
+            refresh();
         }
 
-        public void Refresh() {
+        public void refresh() {
 
             string ZalogaStr = "Select ime, kolicina FROM surovine";
             HelperFunctions.GetDataInDGV(ZalogaStr, zalogaDGVp);
@@ -94,7 +94,7 @@ namespace MASapp
 
         private void kategorijeDGV_CellMouseDoubleClick(object sender, DataGridViewCellMouseEventArgs e)
         {
-            
+            new UrediZbrisi().ShowDialog();
         }
 
         private void kategorijeDGVi_CellMouseClick(object sender, DataGridViewCellMouseEventArgs e)
