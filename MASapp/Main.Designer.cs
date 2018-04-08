@@ -36,6 +36,7 @@
             this.izvoziBp = new System.Windows.Forms.Button();
             this.porabaDGVp = new System.Windows.Forms.DataGridView();
             this.groupBox1 = new System.Windows.Forms.GroupBox();
+            this.button1 = new System.Windows.Forms.Button();
             this.dodajZalogoBp = new System.Windows.Forms.Button();
             this.zalogaDGVp = new System.Windows.Forms.DataGridView();
             this.Vnos = new System.Windows.Forms.TabPage();
@@ -72,7 +73,8 @@
             this.groupBox7 = new System.Windows.Forms.GroupBox();
             this.dodajKategorijeBi = new System.Windows.Forms.Button();
             this.kategorijeDGVi = new System.Windows.Forms.DataGridView();
-            this.button1 = new System.Windows.Forms.Button();
+            this.surovineCBv = new System.Windows.Forms.ComboBox();
+            this.zalogaCBp = new System.Windows.Forms.ComboBox();
             this.tabControl1.SuspendLayout();
             this.Pregled.SuspendLayout();
             this.groupBox2.SuspendLayout();
@@ -162,6 +164,7 @@
             // 
             // groupBox1
             // 
+            this.groupBox1.Controls.Add(this.zalogaCBp);
             this.groupBox1.Controls.Add(this.button1);
             this.groupBox1.Controls.Add(this.dodajZalogoBp);
             this.groupBox1.Controls.Add(this.zalogaDGVp);
@@ -171,6 +174,15 @@
             this.groupBox1.TabIndex = 0;
             this.groupBox1.TabStop = false;
             this.groupBox1.Text = "Zaloga";
+            // 
+            // button1
+            // 
+            this.button1.Location = new System.Drawing.Point(132, 23);
+            this.button1.Name = "button1";
+            this.button1.Size = new System.Drawing.Size(136, 28);
+            this.button1.TabIndex = 2;
+            this.button1.Text = "Dodaj surovino";
+            this.button1.UseVisualStyleBackColor = true;
             // 
             // dodajZalogoBp
             // 
@@ -283,6 +295,7 @@
             // 
             // groupBox6
             // 
+            this.groupBox6.Controls.Add(this.surovineCBv);
             this.groupBox6.Controls.Add(this.surovineDGVv);
             this.groupBox6.Controls.Add(this.label1);
             this.groupBox6.Controls.Add(this.kolicinaBv);
@@ -314,26 +327,26 @@
             // label1
             // 
             this.label1.AutoSize = true;
-            this.label1.Location = new System.Drawing.Point(41, 21);
+            this.label1.Location = new System.Drawing.Point(106, 22);
             this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(86, 20);
+            this.label1.Size = new System.Drawing.Size(67, 20);
             this.label1.TabIndex = 11;
-            this.label1.Text = "Količina(g):";
+            this.label1.Text = "Količina:";
             // 
             // kolicinaBv
             // 
-            this.kolicinaBv.Location = new System.Drawing.Point(130, 18);
+            this.kolicinaBv.Location = new System.Drawing.Point(179, 18);
             this.kolicinaBv.Name = "kolicinaBv";
             this.kolicinaBv.Size = new System.Drawing.Size(55, 26);
             this.kolicinaBv.TabIndex = 10;
             // 
             // dodajSurovineBv
             // 
-            this.dodajSurovineBv.Location = new System.Drawing.Point(191, 18);
+            this.dodajSurovineBv.Location = new System.Drawing.Point(240, 18);
             this.dodajSurovineBv.Name = "dodajSurovineBv";
-            this.dodajSurovineBv.Size = new System.Drawing.Size(84, 28);
+            this.dodajSurovineBv.Size = new System.Drawing.Size(35, 28);
             this.dodajSurovineBv.TabIndex = 9;
-            this.dodajSurovineBv.Text = "Dodaj ->";
+            this.dodajSurovineBv.Text = "->";
             this.dodajSurovineBv.UseVisualStyleBackColor = true;
             this.dodajSurovineBv.Click += new System.EventHandler(this.dodajSurovineBv_Click);
             // 
@@ -475,7 +488,7 @@
             this.kategorijeCBv.FormattingEnabled = true;
             this.kategorijeCBv.Location = new System.Drawing.Point(6, 26);
             this.kategorijeCBv.Name = "kategorijeCBv";
-            this.kategorijeCBv.Size = new System.Drawing.Size(121, 28);
+            this.kategorijeCBv.Size = new System.Drawing.Size(94, 28);
             this.kategorijeCBv.TabIndex = 1;
             this.kategorijeCBv.SelectedIndexChanged += new System.EventHandler(this.comboBox2_SelectedIndexChanged);
             // 
@@ -583,14 +596,22 @@
             this.kategorijeDGVi.CellMouseClick += new System.Windows.Forms.DataGridViewCellMouseEventHandler(this.kategorijeDGVi_CellMouseClick);
             this.kategorijeDGVi.CellMouseDoubleClick += new System.Windows.Forms.DataGridViewCellMouseEventHandler(this.kategorijeDGV_CellMouseDoubleClick);
             // 
-            // button1
+            // surovineCBv
             // 
-            this.button1.Location = new System.Drawing.Point(132, 23);
-            this.button1.Name = "button1";
-            this.button1.Size = new System.Drawing.Size(136, 28);
-            this.button1.TabIndex = 2;
-            this.button1.Text = "Dodaj surovino";
-            this.button1.UseVisualStyleBackColor = true;
+            this.surovineCBv.FormattingEnabled = true;
+            this.surovineCBv.Location = new System.Drawing.Point(6, 18);
+            this.surovineCBv.Name = "surovineCBv";
+            this.surovineCBv.Size = new System.Drawing.Size(94, 28);
+            this.surovineCBv.TabIndex = 8;
+            // 
+            // zalogaCBp
+            // 
+            this.zalogaCBp.FormattingEnabled = true;
+            this.zalogaCBp.Location = new System.Drawing.Point(6, 25);
+            this.zalogaCBp.Name = "zalogaCBp";
+            this.zalogaCBp.Size = new System.Drawing.Size(94, 28);
+            this.zalogaCBp.Sorted = true;
+            this.zalogaCBp.TabIndex = 3;
             // 
             // Main
             // 
@@ -682,6 +703,8 @@
         private System.Windows.Forms.DataGridView surovineDGVv;
         private System.Windows.Forms.DataGridView sestavineIzdelkaDGVv;
         private System.Windows.Forms.Button button1;
+        private System.Windows.Forms.ComboBox zalogaCBp;
+        private System.Windows.Forms.ComboBox surovineCBv;
     }
 }
 

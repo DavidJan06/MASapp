@@ -31,6 +31,12 @@ namespace MASapp
             HelperFunctions.GetDataInDGV(KategorijeStr, kategorijeDGVi);
 
             HelperFunctions.GetDataInCB(KategorijeStr, kategorijeCBv, 0);
+            kategorijeCBv.SelectedIndex = 0;
+
+            zalogaCBp.Items.Insert(0, "All");
+            HelperFunctions.GetDataInCB(KategorijeStr, zalogaCBp, 0);
+            zalogaCBp.SelectedIndex = 0;
+            
         }
 
         #region Pregled
@@ -58,7 +64,7 @@ namespace MASapp
 
         private void izdelkiDGVv_CellMouseDoubleClick(object sender, DataGridViewCellMouseEventArgs e)
         {
-            string Izdelki = "SELECT s.ime AS 'Surovina', k.kolicina AS 'Količina(g)' FROM izdelki_surovine k INNER JOIN surovine s ON s.id = k.surovina_id WHERE izdelek_id = (SELECT id FROM izdelki WHERE ime LIKE '" + izdelkiDGVv.SelectedCells[0].Value.ToString() + "')";
+            string Izdelki = "SELECT s.ime AS 'Surovina', k.kolicina AS 'Količina' FROM izdelki_surovine k INNER JOIN surovine s ON s.id = k.surovina_id WHERE izdelek_id = (SELECT id FROM izdelki WHERE ime LIKE '" + izdelkiDGVv.SelectedCells[0].Value.ToString() + "')";
             HelperFunctions.GetDataInDGV(Izdelki, sestavineIzdelkaDGVv);
         }
 
@@ -105,7 +111,7 @@ namespace MASapp
 
         private void izdelkiDGVi_CellContentDoubleClick(object sender, DataGridViewCellEventArgs e)
         {
-
+            new UrediZbrisi().ShowDialog();
         }
         #endregion
 
