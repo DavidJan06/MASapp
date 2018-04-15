@@ -64,6 +64,12 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="dodaja_surovine.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="dodaja_surovine.Designer.cs">
+      <DependentUpon>dodaja_surovine.cs</DependentUpon>
+    </Compile>
     <Compile Include="DodajSurovine.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -87,6 +93,9 @@
     </Compile>
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
+    <EmbeddedResource Include="dodaja_surovine.resx">
+      <DependentUpon>dodaja_surovine.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="DodajSurovine.resx">
       <DependentUpon>DodajSurovine.cs</DependentUpon>
     </EmbeddedResource>

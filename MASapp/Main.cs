@@ -27,7 +27,7 @@ namespace MASapp
             string SurovineStr = "Select ime FROM surovine";
             HelperFunctions.GetDataInDGV(SurovineStr, surovineDGVv);
 
-            string KategorijeStr = "Select ime, opis FROM kategorije";
+            string KategorijeStr = "Select ime FROM kategorije";
             HelperFunctions.GetDataInDGV(KategorijeStr, kategorijeDGVi);
 
             HelperFunctions.GetDataInCB(KategorijeStr, kategorijeCBv, 0);
@@ -113,8 +113,13 @@ namespace MASapp
         {
             new UrediZbrisi().ShowDialog();
         }
+
         #endregion
 
-
+        private void button1_Click_2(object sender, EventArgs e)
+        {
+            dodaja_surovine novo = new dodaja_surovine();
+            novo.Show();
+        }
     }
 }

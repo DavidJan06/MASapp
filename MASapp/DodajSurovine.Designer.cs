@@ -37,9 +37,10 @@
             // dodajBds
             // 
             this.dodajBds.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(238)));
-            this.dodajBds.Location = new System.Drawing.Point(285, 11);
+            this.dodajBds.Location = new System.Drawing.Point(570, 21);
+            this.dodajBds.Margin = new System.Windows.Forms.Padding(6, 6, 6, 6);
             this.dodajBds.Name = "dodajBds";
-            this.dodajBds.Size = new System.Drawing.Size(99, 28);
+            this.dodajBds.Size = new System.Drawing.Size(198, 54);
             this.dodajBds.TabIndex = 2;
             this.dodajBds.Text = "Dodaj";
             this.dodajBds.UseVisualStyleBackColor = true;
@@ -49,45 +50,49 @@
             // 
             this.surovineCBds.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(238)));
             this.surovineCBds.FormattingEnabled = true;
-            this.surovineCBds.Location = new System.Drawing.Point(12, 12);
+            this.surovineCBds.Location = new System.Drawing.Point(24, 23);
+            this.surovineCBds.Margin = new System.Windows.Forms.Padding(6, 6, 6, 6);
             this.surovineCBds.Name = "surovineCBds";
-            this.surovineCBds.Size = new System.Drawing.Size(121, 28);
+            this.surovineCBds.Size = new System.Drawing.Size(238, 45);
             this.surovineCBds.TabIndex = 3;
             // 
             // steviloTBds
             // 
             this.steviloTBds.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(238)));
-            this.steviloTBds.Location = new System.Drawing.Point(212, 12);
+            this.steviloTBds.Location = new System.Drawing.Point(424, 23);
+            this.steviloTBds.Margin = new System.Windows.Forms.Padding(6, 6, 6, 6);
             this.steviloTBds.Name = "steviloTBds";
-            this.steviloTBds.Size = new System.Drawing.Size(67, 26);
+            this.steviloTBds.Size = new System.Drawing.Size(130, 44);
             this.steviloTBds.TabIndex = 4;
             // 
             // label1
             // 
             this.label1.AutoSize = true;
             this.label1.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(238)));
-            this.label1.Location = new System.Drawing.Point(139, 15);
+            this.label1.Location = new System.Drawing.Point(278, 29);
+            this.label1.Margin = new System.Windows.Forms.Padding(6, 0, 6, 0);
             this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(67, 20);
+            this.label1.Size = new System.Drawing.Size(138, 37);
             this.label1.TabIndex = 5;
             this.label1.Text = "Količina:";
             // 
             // DodajSurovine
             // 
-            this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
+            this.AutoScaleDimensions = new System.Drawing.SizeF(12F, 25F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(395, 58);
+            this.ClientSize = new System.Drawing.Size(790, 112);
             this.Controls.Add(this.label1);
             this.Controls.Add(this.steviloTBds);
             this.Controls.Add(this.surovineCBds);
             this.Controls.Add(this.dodajBds);
-            this.Margin = new System.Windows.Forms.Padding(2);
+            this.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.MaximizeBox = false;
             this.MinimizeBox = false;
             this.Name = "DodajSurovine";
             this.ShowIcon = false;
             this.SizeGripStyle = System.Windows.Forms.SizeGripStyle.Show;
             this.Text = "DodajSurovine";
+            this.Load += new System.EventHandler(this.DodajSurovine_Load);
             this.ResumeLayout(false);
             this.PerformLayout();
 
