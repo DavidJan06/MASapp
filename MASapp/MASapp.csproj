@@ -76,6 +76,12 @@
     <Compile Include="DodajSurovine.Designer.cs">
       <DependentUpon>DodajSurovine.cs</DependentUpon>
     </Compile>
+    <Compile Include="dodaj_kategorijo.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="dodaj_kategorijo.Designer.cs">
+      <DependentUpon>dodaj_kategorijo.cs</DependentUpon>
+    </Compile>
     <Compile Include="UrediZbrisi.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -98,6 +104,9 @@
     </EmbeddedResource>
     <EmbeddedResource Include="DodajSurovine.resx">
       <DependentUpon>DodajSurovine.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="dodaj_kategorijo.resx">
+      <DependentUpon>dodaj_kategorijo.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="UrediZbrisi.resx">
       <DependentUpon>UrediZbrisi.cs</DependentUpon>

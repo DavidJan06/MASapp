@@ -80,7 +80,6 @@ E:\4.Letnik\RPA\MASapp\MASapp\obj\Debug\MASapp.UrediZbrisi.resources
 \\Mac\Home\Desktop\MASapp\MASapp\bin\Debug\EntityFramework.SqlServer.xml
 \\Mac\Home\Desktop\MASapp\MASapp\bin\Debug\System.Data.SQLite.xml
 \\Mac\Home\Desktop\MASapp\MASapp\bin\Debug\System.Data.SQLite.dll.config
-\\Mac\Home\Desktop\MASapp\MASapp\obj\Debug\MASapp.csprojResolveAssemblyReference.cache
 \\Mac\Home\Desktop\MASapp\MASapp\obj\Debug\MASapp.DodajSurovine.resources
 \\Mac\Home\Desktop\MASapp\MASapp\obj\Debug\MASapp.UrediZbrisi.resources
 \\Mac\Home\Desktop\MASapp\MASapp\obj\Debug\MASapp.Main.resources
@@ -90,3 +89,4 @@ E:\4.Letnik\RPA\MASapp\MASapp\obj\Debug\MASapp.UrediZbrisi.resources
 \\Mac\Home\Desktop\MASapp\MASapp\obj\Debug\MASapp.exe
 \\Mac\Home\Desktop\MASapp\MASapp\obj\Debug\MASapp.pdb
 \\Mac\Home\Desktop\MASapp\MASapp\obj\Debug\MASapp.dodaja_surovine.resources
+\\Mac\Home\Desktop\MASapp\MASapp\obj\Debug\MASapp.dodaj_kategorijo.resources

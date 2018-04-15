@@ -121,5 +121,11 @@ namespace MASapp
             dodaja_surovine novo = new dodaja_surovine();
             novo.Show();
         }
+
+        private void dodajKategorijeBi_Click(object sender, EventArgs e)
+        {
+            dodaj_kategorijo novo = new dodaj_kategorijo();
+            novo.Show();
+        }
     }
 }

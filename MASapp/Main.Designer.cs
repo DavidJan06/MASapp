@@ -650,6 +650,7 @@
             this.dodajKategorijeBi.TabIndex = 3;
             this.dodajKategorijeBi.Text = "Dodaj";
             this.dodajKategorijeBi.UseVisualStyleBackColor = true;
+            this.dodajKategorijeBi.Click += new System.EventHandler(this.dodajKategorijeBi_Click);
             // 
             // kategorijeDGVi
             // 

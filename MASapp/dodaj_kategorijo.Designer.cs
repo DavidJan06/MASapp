@@ -1,0 +1,106 @@
+﻿namespace MASapp
+{
+    partial class dodaj_kategorijo
+    {
+        /// <summary>
+        /// Required designer variable.
+        /// </summary>
+        private System.ComponentModel.IContainer components = null;
+
+        /// <summary>
+        /// Clean up any resources being used.
+        /// </summary>
+        /// <param name="disposing">true if managed resources should be disposed; otherwise, false.</param>
+        protected override void Dispose(bool disposing)
+        {
+            if (disposing && (components != null))
+            {
+                components.Dispose();
+            }
+            base.Dispose(disposing);
+        }
+
+        #region Windows Form Designer generated code
+
+        /// <summary>
+        /// Required method for Designer support - do not modify
+        /// the contents of this method with the code editor.
+        /// </summary>
+        private void InitializeComponent()
+        {
+            this.button1 = new System.Windows.Forms.Button();
+            this.ime_kategorije = new System.Windows.Forms.TextBox();
+            this.label1 = new System.Windows.Forms.Label();
+            this.opis_kategorije = new System.Windows.Forms.TextBox();
+            this.label2 = new System.Windows.Forms.Label();
+            this.SuspendLayout();
+            // 
+            // button1
+            // 
+            this.button1.Location = new System.Drawing.Point(126, 286);
+            this.button1.Name = "button1";
+            this.button1.Size = new System.Drawing.Size(184, 49);
+            this.button1.TabIndex = 0;
+            this.button1.Text = "Dodaj";
+            this.button1.UseVisualStyleBackColor = true;
+            this.button1.Click += new System.EventHandler(this.button1_Click);
+            // 
+            // ime_kategorije
+            // 
+            this.ime_kategorije.Location = new System.Drawing.Point(29, 60);
+            this.ime_kategorije.Name = "ime_kategorije";
+            this.ime_kategorije.Size = new System.Drawing.Size(206, 31);
+            this.ime_kategorije.TabIndex = 1;
+            // 
+            // label1
+            // 
+            this.label1.AutoSize = true;
+            this.label1.Location = new System.Drawing.Point(24, 23);
+            this.label1.Name = "label1";
+            this.label1.Size = new System.Drawing.Size(152, 25);
+            this.label1.TabIndex = 2;
+            this.label1.Text = "Ime kategorije:";
+            // 
+            // opis_kategorije
+            // 
+            this.opis_kategorije.Location = new System.Drawing.Point(29, 154);
+            this.opis_kategorije.Multiline = true;
+            this.opis_kategorije.Name = "opis_kategorije";
+            this.opis_kategorije.Size = new System.Drawing.Size(396, 96);
+            this.opis_kategorije.TabIndex = 3;
+            // 
+            // label2
+            // 
+            this.label2.AutoSize = true;
+            this.label2.Location = new System.Drawing.Point(24, 107);
+            this.label2.Name = "label2";
+            this.label2.Size = new System.Drawing.Size(62, 25);
+            this.label2.TabIndex = 4;
+            this.label2.Text = "Opis:";
+            // 
+            // dodaj_kategorijo
+            // 
+            this.AutoScaleDimensions = new System.Drawing.SizeF(12F, 25F);
+            this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
+            this.ClientSize = new System.Drawing.Size(450, 357);
+            this.Controls.Add(this.label2);
+            this.Controls.Add(this.opis_kategorije);
+            this.Controls.Add(this.label1);
+            this.Controls.Add(this.ime_kategorije);
+            this.Controls.Add(this.button1);
+            this.Name = "dodaj_kategorijo";
+            this.Text = "dodaj_kategorijo";
+            this.ResumeLayout(false);
+            this.PerformLayout();
+
+        }
+
+        #endregion
+
+        private System.Windows.Forms.Button button1;
+        private System.Windows.Forms.TextBox ime_kategorije;
+        private System.Windows.Forms.Label label1;
+        private System.Windows.Forms.TextBox opis_kategorije;
+        private System.Windows.Forms.Label label2;
+    }
+}

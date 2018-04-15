@@ -11,24 +11,16 @@ using System.Data.SQLite;
 
 namespace MASapp
 {
-    public partial class dodaja_surovine : Form
+    public partial class dodaj_kategorijo : Form
     {
-
-        public dodaja_surovine()
+        public dodaj_kategorijo()
         {
             InitializeComponent();
-
-            string KategorijeStr = "Select ime FROM kategorije";
-            
-
-            HelperFunctions.GetDataInCB(KategorijeStr, ime_kategorije, 0);
-            ime_kategorije.SelectedIndex = 0;
         }
 
-        private void dodaj_surovino_Click(object sender, EventArgs e)
+        private void button1_Click(object sender, EventArgs e)
         {
-            int selectedIndex = ime_kategorije.SelectedIndex;
-            Object selectedValue = ime_kategorije.SelectedItem;
+           
 
 
             SQLiteConnection connection = new
@@ -43,7 +35,7 @@ namespace MASapp
             //SQLiteDataAdapter adapt = new SQLiteDataAdapter();
             //DataSet ds = new DataSet();
 
-            string dodajSurovine = "INSERT INTO surovine (ime) VALUES ('" + ime_surovine.Text + "') WHERE kategorija_id LIKE (SELECT id FROM kategorije WHERE ime LIKE ('" + selectedValue.ToString() + "'))";
+            string dodajSurovine = "INSERT INTO kategorije (ime, opis) VALUES ('" + ime_kategorije.Text + "', '" + opis_kategorije.Text + "')";
 
             command1.CommandText = dodajSurovine;
 
@@ -51,11 +43,11 @@ namespace MASapp
             //  adapt.Fill(ds, "delavci");
             //   DataRow nrow = ds.Tables["delavci"].NewRow();
 
-            command.CommandText = "SELECT * FROM surovine WHERE ime LIKE ('" + ime_surovine.Text + "')";
+            command.CommandText = "SELECT * FROM kategorije WHERE ime LIKE ('" + ime_kategorije.Text + "')";
 
 
             SQLiteDataReader reader = command.ExecuteReader();
-            
+
             int count = 0;
             while (reader.Read())
             {
@@ -84,12 +76,8 @@ namespace MASapp
 
 
 
-            MessageBox.Show("Uspešno dodana surovina!");
-        }
-
-        private void dodaja_surovine_Load(object sender, EventArgs e)
-        {
-
+            MessageBox.Show("Uspešno dodana kategorija!");
         }
     }
-}
+    }
+
