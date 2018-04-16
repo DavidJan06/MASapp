@@ -183,6 +183,7 @@
             this.zalogaCBp.Size = new System.Drawing.Size(94, 28);
             this.zalogaCBp.Sorted = true;
             this.zalogaCBp.TabIndex = 3;
+            this.zalogaCBp.SelectedIndexChanged += new System.EventHandler(this.zalogaCBp_SelectedIndexChanged);
             // 
             // dodajBTp
             // 
@@ -324,6 +325,7 @@
             this.surovineCBv.Name = "surovineCBv";
             this.surovineCBv.Size = new System.Drawing.Size(94, 28);
             this.surovineCBv.TabIndex = 8;
+            this.surovineCBv.SelectedIndexChanged += new System.EventHandler(this.surovineCBv_SelectedIndexChanged);
             // 
             // surovineDGVv
             // 
@@ -465,11 +467,11 @@
             // 
             // button2
             // 
-            this.button2.Location = new System.Drawing.Point(173, 25);
+            this.button2.Location = new System.Drawing.Point(102, 25);
             this.button2.Name = "button2";
-            this.button2.Size = new System.Drawing.Size(84, 28);
+            this.button2.Size = new System.Drawing.Size(155, 28);
             this.button2.TabIndex = 18;
-            this.button2.Text = "Odstrani";
+            this.button2.Text = "Odstrani Sestavino";
             this.button2.UseVisualStyleBackColor = true;
             // 
             // groupBox3

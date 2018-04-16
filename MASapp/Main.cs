@@ -27,16 +27,19 @@ namespace MASapp
             string SurovineStr = "Select ime FROM surovine";
             HelperFunctions.GetDataInDGV(SurovineStr, surovineDGVv);
 
-            string KategorijeStr = "Select ime FROM kategorije";
-            HelperFunctions.GetDataInDGV(KategorijeStr, kategorijeDGVi);
+            string KategorijeIStr = "Select ime FROM kategorije_i";
+            HelperFunctions.GetDataInDGV(KategorijeIStr, kategorijeDGVi);
 
-            HelperFunctions.GetDataInCB(KategorijeStr, kategorijeCBv, 0);
+            HelperFunctions.GetDataInCB(KategorijeIStr, kategorijeCBv, 0);
             kategorijeCBv.SelectedIndex = 0;
 
+            string KategorijeSStr = "Select ime FROM kategorije_s";
             zalogaCBp.Items.Insert(0, "All");
-            HelperFunctions.GetDataInCB(KategorijeStr, zalogaCBp, 0);
+            HelperFunctions.GetDataInCB(KategorijeSStr, zalogaCBp, 0);
             zalogaCBp.SelectedIndex = 0;
-            
+
+            HelperFunctions.GetDataInCB(KategorijeSStr, surovineCBv, 0);
+            surovineCBv.SelectedIndex = 0;
         }
 
         #region Pregled
@@ -57,13 +60,27 @@ namespace MASapp
             new SurovineKategorije().ShowDialog();
         }
 
+        private void zalogaCBp_SelectedIndexChanged(object sender, EventArgs e)
+        {
+            if(zalogaCBp.SelectedIndex == 0)
+            {
+                string ZalogaStr = "Select ime, kolicina FROM surovine";
+                HelperFunctions.GetDataInDGV(ZalogaStr, zalogaDGVp);
+            }
+            else
+            {
+                string ZalogaStr = "Select ime, kolicina FROM surovine WHERE kategorija_id LIKE(SELECT id FROM kategorije_s WHERE ime LIKE '"+ zalogaCBp.SelectedItem.ToString() + "')";
+                HelperFunctions.GetDataInDGV(ZalogaStr, zalogaDGVp);
+            }
+        }
+
         #endregion
 
         #region Vnos
 
         private void comboBox2_SelectedIndexChanged(object sender, EventArgs e)
         {
-            string Meni = "SELECT ime FROM izdelki WHERE kategorija_id = (SELECT id FROM kategorije WHERE ime = '" + kategorijeCBv.SelectedItem.ToString() + "')";
+            string Meni = "SELECT ime FROM izdelki WHERE kategorija_id = (SELECT id FROM kategorije_i WHERE ime = '" + kategorijeCBv.SelectedItem.ToString() + "')";
             HelperFunctions.GetDataInDGV(Meni, izdelkiDGVv);
         }
 
@@ -71,6 +88,12 @@ namespace MASapp
         {
             string Izdelki = "SELECT s.ime AS 'Surovina', k.kolicina AS 'Količina' FROM izdelki_surovine k INNER JOIN surovine s ON s.id = k.surovina_id WHERE izdelek_id = (SELECT id FROM izdelki WHERE ime LIKE '" + izdelkiDGVv.SelectedCells[0].Value.ToString() + "')";
             HelperFunctions.GetDataInDGV(Izdelki, sestavineIzdelkaDGVv);
+        }
+
+        private void surovineCBv_SelectedIndexChanged(object sender, EventArgs e)
+        {
+            string ZalogaStr = "Select ime, kolicina FROM surovine WHERE kategorija_id LIKE(SELECT id FROM kategorije_s WHERE ime LIKE '" + surovineCBv.SelectedItem.ToString() + "')";
+            HelperFunctions.GetDataInDGV(ZalogaStr, surovineDGVv);
         }
 
         private void dodajSurovineBv_Click(object sender, EventArgs e)
@@ -111,7 +134,7 @@ namespace MASapp
 
         private void kategorijeDGVi_CellMouseClick(object sender, DataGridViewCellMouseEventArgs e)
         {
-            string Izdelki = "SELECT ime FROM izdelki WHERE kategorija_id = (SELECT id FROM kategorije WHERE ime = '" + kategorijeDGVi.SelectedCells[0].Value.ToString() + "')";
+            string Izdelki = "SELECT ime FROM izdelki WHERE kategorija_id = (SELECT id FROM kategorije_i WHERE ime = '" + kategorijeDGVi.SelectedCells[0].Value.ToString() + "')";
             HelperFunctions.GetDataInDGV(Izdelki, izdelkiDGVi);
         }
 
@@ -120,14 +143,13 @@ namespace MASapp
             new UrediZbrisi().ShowDialog();
         }
 
-        #endregion
-
-
-
         private void dodajKategorijeBi_Click(object sender, EventArgs e)
         {
             new dodaj_kategorijo().ShowDialog();
         }
+
+
+        #endregion
 
 
     }
