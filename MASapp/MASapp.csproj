@@ -82,6 +82,12 @@
     <Compile Include="dodaj_kategorijo.Designer.cs">
       <DependentUpon>dodaj_kategorijo.cs</DependentUpon>
     </Compile>
+    <Compile Include="SurovineKategorije.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="SurovineKategorije.Designer.cs">
+      <DependentUpon>SurovineKategorije.cs</DependentUpon>
+    </Compile>
     <Compile Include="UrediZbrisi.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -107,6 +113,9 @@
     </EmbeddedResource>
     <EmbeddedResource Include="dodaj_kategorijo.resx">
       <DependentUpon>dodaj_kategorijo.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="SurovineKategorije.resx">
+      <DependentUpon>SurovineKategorije.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="UrediZbrisi.resx">
       <DependentUpon>UrediZbrisi.cs</DependentUpon>

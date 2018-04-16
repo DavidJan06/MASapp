@@ -52,6 +52,11 @@ namespace MASapp
             dodaj.Show();
         }
 
+        private void dodajBTp_Click(object sender, EventArgs e)
+        {
+            new SurovineKategorije().ShowDialog();
+        }
+
         #endregion
 
         #region Vnos
@@ -72,7 +77,8 @@ namespace MASapp
         {
             if (kolicinaBv.Text != "")
             {
-                if (float.TryParse(kolicinaBv.Text, out float n))
+                float n;
+                if (float.TryParse(kolicinaBv.Text, out n))
                 {
                     /*var index = sestavineIzdelkaDGVv.Rows.Add();
                     sestavineIzdelkaDGVv.Rows[index].Cells[0].Value = surovineDGVv.SelectedCells[0].Value.ToString();
@@ -116,16 +122,13 @@ namespace MASapp
 
         #endregion
 
-        private void button1_Click_2(object sender, EventArgs e)
-        {
-            dodaja_surovine novo = new dodaja_surovine();
-            novo.Show();
-        }
+
 
         private void dodajKategorijeBi_Click(object sender, EventArgs e)
         {
-            dodaj_kategorijo novo = new dodaj_kategorijo();
-            novo.Show();
+            new dodaj_kategorijo().ShowDialog();
         }
+
+
     }
 }

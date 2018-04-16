@@ -37,9 +37,9 @@
             // 
             // button1
             // 
-            this.button1.Location = new System.Drawing.Point(126, 286);
+            this.button1.Location = new System.Drawing.Point(242, 136);
             this.button1.Name = "button1";
-            this.button1.Size = new System.Drawing.Size(184, 49);
+            this.button1.Size = new System.Drawing.Size(68, 31);
             this.button1.TabIndex = 0;
             this.button1.Text = "Dodaj";
             this.button1.UseVisualStyleBackColor = true;
@@ -47,49 +47,50 @@
             // 
             // ime_kategorije
             // 
-            this.ime_kategorije.Location = new System.Drawing.Point(29, 60);
+            this.ime_kategorije.Location = new System.Drawing.Point(131, 6);
             this.ime_kategorije.Name = "ime_kategorije";
-            this.ime_kategorije.Size = new System.Drawing.Size(206, 31);
+            this.ime_kategorije.Size = new System.Drawing.Size(176, 26);
             this.ime_kategorije.TabIndex = 1;
             // 
             // label1
             // 
             this.label1.AutoSize = true;
-            this.label1.Location = new System.Drawing.Point(24, 23);
+            this.label1.Location = new System.Drawing.Point(12, 9);
             this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(152, 25);
+            this.label1.Size = new System.Drawing.Size(113, 20);
             this.label1.TabIndex = 2;
             this.label1.Text = "Ime kategorije:";
             // 
             // opis_kategorije
             // 
-            this.opis_kategorije.Location = new System.Drawing.Point(29, 154);
+            this.opis_kategorije.Location = new System.Drawing.Point(12, 52);
             this.opis_kategorije.Multiline = true;
             this.opis_kategorije.Name = "opis_kategorije";
-            this.opis_kategorije.Size = new System.Drawing.Size(396, 96);
+            this.opis_kategorije.Size = new System.Drawing.Size(298, 78);
             this.opis_kategorije.TabIndex = 3;
             // 
             // label2
             // 
             this.label2.AutoSize = true;
-            this.label2.Location = new System.Drawing.Point(24, 107);
+            this.label2.Location = new System.Drawing.Point(12, 29);
             this.label2.Name = "label2";
-            this.label2.Size = new System.Drawing.Size(62, 25);
+            this.label2.Size = new System.Drawing.Size(45, 20);
             this.label2.TabIndex = 4;
             this.label2.Text = "Opis:";
             // 
             // dodaj_kategorijo
             // 
-            this.AutoScaleDimensions = new System.Drawing.SizeF(12F, 25F);
+            this.AutoScaleDimensions = new System.Drawing.SizeF(9F, 20F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(450, 357);
+            this.ClientSize = new System.Drawing.Size(319, 176);
             this.Controls.Add(this.label2);
             this.Controls.Add(this.opis_kategorije);
             this.Controls.Add(this.label1);
             this.Controls.Add(this.ime_kategorije);
             this.Controls.Add(this.button1);
+            this.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(238)));
             this.Name = "dodaj_kategorijo";
-            this.Text = "dodaj_kategorijo";
+            this.Text = "Kategorijo";
             this.ResumeLayout(false);
             this.PerformLayout();
 
