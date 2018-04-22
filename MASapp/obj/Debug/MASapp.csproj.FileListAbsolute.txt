@@ -134,3 +134,6 @@ C:\Users\david\Source\Repos\MASapp\MASapp\obj\Debug\MASapp.UrediZbrisi.resources
 C:\Users\david\Source\Repos\MASapp\MASapp\obj\Debug\MASapp.Main.resources
 C:\Users\david\Source\Repos\MASapp\MASapp\obj\Debug\MASapp.Properties.Resources.resources
 C:\Users\david\Source\Repos\MASapp\MASapp\obj\Debug\MASapp.csproj.GenerateResource.Cache
+E:\4.Letnik\RPA\MASapp\MASapp\obj\Debug\MASapp.dodaja_surovine.resources
+E:\4.Letnik\RPA\MASapp\MASapp\obj\Debug\MASapp.dodaj_kategorijo.resources
+E:\4.Letnik\RPA\MASapp\MASapp\obj\Debug\MASapp.SurovineKategorije.resources

@@ -13,16 +13,27 @@ namespace MASapp
 {
     public partial class dodaj_kategorijo : Form
     {
-        public dodaj_kategorijo()
+        string IfOne = "kategorije_i";
+        string IfTwo = "kategorije_s";
+
+        string Baza;
+
+        public dodaj_kategorijo(int num)
         {
             InitializeComponent();
+            
+            if(num == 1)
+            {
+                Baza = IfOne;
+            }
+            else if(num == 2)
+            {
+                Baza = IfTwo;
+            }
         }
 
         private void button1_Click(object sender, EventArgs e)
         {
-           
-
-
             SQLiteConnection connection = new
             SQLiteConnection("data source=mas.db");
 
@@ -35,7 +46,7 @@ namespace MASapp
             //SQLiteDataAdapter adapt = new SQLiteDataAdapter();
             //DataSet ds = new DataSet();
 
-            string dodajSurovine = "INSERT INTO kategorije (ime, opis) VALUES ('" + ime_kategorije.Text + "', '" + opis_kategorije.Text + "')";
+            string dodajSurovine = "INSERT INTO "+Baza+" (ime, opis) VALUES ('" + ime_kategorije.Text + "', '" + opis_kategorije.Text + "')";
 
             command1.CommandText = dodajSurovine;
 
@@ -43,7 +54,7 @@ namespace MASapp
             //  adapt.Fill(ds, "delavci");
             //   DataRow nrow = ds.Tables["delavci"].NewRow();
 
-            command.CommandText = "SELECT * FROM kategorije WHERE ime LIKE ('" + ime_kategorije.Text + "')";
+            command.CommandText = "SELECT * FROM " + Baza + " WHERE ime LIKE ('" + ime_kategorije.Text + "')";
 
 
             SQLiteDataReader reader = command.ExecuteReader();
@@ -77,6 +88,8 @@ namespace MASapp
 
 
             MessageBox.Show("Uspešno dodana kategorija!");
+
+            this.Close();
         }
     }
     }

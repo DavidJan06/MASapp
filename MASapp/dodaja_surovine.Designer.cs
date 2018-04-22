@@ -91,7 +91,6 @@
             this.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(238)));
             this.Name = "dodaja_surovine";
             this.Text = "Surovine";
-            this.Load += new System.EventHandler(this.dodaja_surovine_Load);
             this.ResumeLayout(false);
             this.PerformLayout();
 

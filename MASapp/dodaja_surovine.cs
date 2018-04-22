@@ -18,7 +18,7 @@ namespace MASapp
         {
             InitializeComponent();
 
-            string KategorijeStr = "Select ime FROM kategorije";
+            string KategorijeStr = "Select ime FROM kategorije_s";
             
 
             HelperFunctions.GetDataInCB(KategorijeStr, ime_kategorije, 0);
@@ -27,10 +27,6 @@ namespace MASapp
 
         private void dodaj_surovino_Click(object sender, EventArgs e)
         {
-            int selectedIndex = ime_kategorije.SelectedIndex;
-            Object selectedValue = ime_kategorije.SelectedItem;
-
-
             SQLiteConnection connection = new
             SQLiteConnection("data source=mas.db");
 
@@ -43,7 +39,7 @@ namespace MASapp
             //SQLiteDataAdapter adapt = new SQLiteDataAdapter();
             //DataSet ds = new DataSet();
 
-            string dodajSurovine = "INSERT INTO surovine (ime) VALUES ('" + ime_surovine.Text + "') WHERE kategorija_id LIKE (SELECT id FROM kategorije WHERE ime LIKE ('" + selectedValue.ToString() + "'))";
+            string dodajSurovine = "INSERT INTO surovine (ime, kategorija_id) VALUES ('" + ime_surovine.Text + "', (SELECT id FROM kategorije_s WHERE ime LIKE '"+ime_kategorije.SelectedItem.ToString()+"') )";
 
             command1.CommandText = dodajSurovine;
 
@@ -85,11 +81,8 @@ namespace MASapp
 
 
             MessageBox.Show("Uspešno dodana surovina!");
-        }
 
-        private void dodaja_surovine_Load(object sender, EventArgs e)
-        {
-
+            this.Close();
         }
     }
 }

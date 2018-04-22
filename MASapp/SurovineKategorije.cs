@@ -20,11 +20,15 @@ namespace MASapp
         private void Surovine_Click(object sender, EventArgs e)
         {
             new dodaja_surovine().ShowDialog();
+
+            this.Close();
         }
 
         private void Kategorije_Click(object sender, EventArgs e)
         {
-            new dodaj_kategorijo().ShowDialog();
+            new dodaj_kategorijo(2).ShowDialog();
+
+            this.Close();
         }
     }
 }

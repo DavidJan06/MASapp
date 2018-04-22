@@ -42,6 +42,16 @@ namespace MASapp
             surovineCBv.SelectedIndex = 0;
         }
 
+        public void CLS()
+        {
+            zalogaDGVp.DataSource = null;
+            surovineDGVv.DataSource = null;
+            kategorijeDGVi.DataSource = null;
+            kategorijeCBv.Items.Clear();
+            zalogaCBp.Items.Clear();
+            surovineCBv.Items.Clear();
+        }
+
         #region Pregled
 
         private void button1_Click(object sender, EventArgs e)
@@ -58,6 +68,9 @@ namespace MASapp
         private void dodajBTp_Click(object sender, EventArgs e)
         {
             new SurovineKategorije().ShowDialog();
+
+            CLS();
+            refresh();
         }
 
         private void zalogaCBp_SelectedIndexChanged(object sender, EventArgs e)
@@ -145,7 +158,10 @@ namespace MASapp
 
         private void dodajKategorijeBi_Click(object sender, EventArgs e)
         {
-            new dodaj_kategorijo().ShowDialog();
+            new dodaj_kategorijo(1).ShowDialog();
+
+            CLS();
+            refresh();
         }
 
 
