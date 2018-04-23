@@ -61,8 +61,7 @@ namespace MASapp
 
         private void button1_Click_1(object sender, EventArgs e)
         {
-            DodajSurovine dodaj = new DodajSurovine();
-            dodaj.Show();
+            new DodajSurovine().ShowDialog();
         }
 
         private void dodajBTp_Click(object sender, EventArgs e)
