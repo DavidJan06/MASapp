@@ -61,7 +61,6 @@
             this.porabaDGVv = new System.Windows.Forms.DataGridView();
             this.groupBox4 = new System.Windows.Forms.GroupBox();
             this.sestavineIzdelkaDGVv = new System.Windows.Forms.DataGridView();
-            this.imeIzdelkaLv = new System.Windows.Forms.Label();
             this.button2 = new System.Windows.Forms.Button();
             this.groupBox3 = new System.Windows.Forms.GroupBox();
             this.izdelkiDGVv = new System.Windows.Forms.DataGridView();
@@ -75,6 +74,7 @@
             this.groupBox7 = new System.Windows.Forms.GroupBox();
             this.dodajKategorijeBi = new System.Windows.Forms.Button();
             this.kategorijeDGVi = new System.Windows.Forms.DataGridView();
+            this.shraniIzdelekBv = new System.Windows.Forms.Button();
             this.tabControl1.SuspendLayout();
             this.Pregled.SuspendLayout();
             this.groupBox2.SuspendLayout();
@@ -429,8 +429,8 @@
             // 
             // groupBox4
             // 
+            this.groupBox4.Controls.Add(this.shraniIzdelekBv);
             this.groupBox4.Controls.Add(this.sestavineIzdelkaDGVv);
-            this.groupBox4.Controls.Add(this.imeIzdelkaLv);
             this.groupBox4.Controls.Add(this.button2);
             this.groupBox4.Location = new System.Drawing.Point(295, 116);
             this.groupBox4.Name = "groupBox4";
@@ -456,22 +456,13 @@
             this.sestavineIzdelkaDGVv.Size = new System.Drawing.Size(251, 329);
             this.sestavineIzdelkaDGVv.TabIndex = 8;
             // 
-            // imeIzdelkaLv
-            // 
-            this.imeIzdelkaLv.AutoSize = true;
-            this.imeIzdelkaLv.Location = new System.Drawing.Point(6, 29);
-            this.imeIzdelkaLv.Name = "imeIzdelkaLv";
-            this.imeIzdelkaLv.Size = new System.Drawing.Size(91, 20);
-            this.imeIzdelkaLv.TabIndex = 19;
-            this.imeIzdelkaLv.Text = "Ime Izdelka";
-            // 
             // button2
             // 
-            this.button2.Location = new System.Drawing.Point(102, 25);
+            this.button2.Location = new System.Drawing.Point(173, 25);
             this.button2.Name = "button2";
-            this.button2.Size = new System.Drawing.Size(155, 28);
+            this.button2.Size = new System.Drawing.Size(84, 28);
             this.button2.TabIndex = 18;
-            this.button2.Text = "Odstrani Sestavino";
+            this.button2.Text = "Odstrani";
             this.button2.UseVisualStyleBackColor = true;
             // 
             // groupBox3
@@ -617,6 +608,15 @@
             this.kategorijeDGVi.CellMouseClick += new System.Windows.Forms.DataGridViewCellMouseEventHandler(this.kategorijeDGVi_CellMouseClick);
             this.kategorijeDGVi.CellMouseDoubleClick += new System.Windows.Forms.DataGridViewCellMouseEventHandler(this.kategorijeDGV_CellMouseDoubleClick);
             // 
+            // shraniIzdelekBv
+            // 
+            this.shraniIzdelekBv.Location = new System.Drawing.Point(12, 25);
+            this.shraniIzdelekBv.Name = "shraniIzdelekBv";
+            this.shraniIzdelekBv.Size = new System.Drawing.Size(84, 28);
+            this.shraniIzdelekBv.TabIndex = 19;
+            this.shraniIzdelekBv.Text = "Shrani";
+            this.shraniIzdelekBv.UseVisualStyleBackColor = true;
+            // 
             // Main
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
@@ -648,7 +648,6 @@
             ((System.ComponentModel.ISupportInitialize)(this.pregledDGVv)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.porabaDGVv)).EndInit();
             this.groupBox4.ResumeLayout(false);
-            this.groupBox4.PerformLayout();
             ((System.ComponentModel.ISupportInitialize)(this.sestavineIzdelkaDGVv)).EndInit();
             this.groupBox3.ResumeLayout(false);
             ((System.ComponentModel.ISupportInitialize)(this.izdelkiDGVv)).EndInit();
@@ -701,7 +700,6 @@
         private System.Windows.Forms.Button button2;
         private System.Windows.Forms.Button button4;
         private System.Windows.Forms.Button button3;
-        private System.Windows.Forms.Label imeIzdelkaLv;
         private System.Windows.Forms.Button button6;
         private System.Windows.Forms.Button button5;
         private System.Windows.Forms.DataGridView surovineDGVv;
@@ -709,6 +707,7 @@
         private System.Windows.Forms.Button dodajBTp;
         private System.Windows.Forms.ComboBox zalogaCBp;
         private System.Windows.Forms.ComboBox surovineCBv;
+        private System.Windows.Forms.Button shraniIzdelekBv;
     }
 }
 

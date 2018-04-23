@@ -96,7 +96,7 @@
     </Compile>
     <Compile Include="HelperFunctions.cs" />
     <Compile Include="Izdelki.cs" />
-    <Compile Include="Kategorije.cs" />
+    <Compile Include="Surovina.cs" />
     <Compile Include="Main.cs">
       <SubType>Form</SubType>
     </Compile>

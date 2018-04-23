@@ -13,6 +13,8 @@ namespace MASapp
 {
     public partial class Main : Form
     {
+        List<Surovina> Surovine = new List<Surovina>();
+
         public Main()
         {
             InitializeComponent();
@@ -96,16 +98,16 @@ namespace MASapp
             HelperFunctions.GetDataInDGV(Meni, izdelkiDGVv);
         }
 
-        private void izdelkiDGVv_CellMouseDoubleClick(object sender, DataGridViewCellMouseEventArgs e)
-        {
-            string Izdelki = "SELECT s.ime AS 'Surovina', k.kolicina AS 'Količina' FROM izdelki_surovine k INNER JOIN surovine s ON s.id = k.surovina_id WHERE izdelek_id = (SELECT id FROM izdelki WHERE ime LIKE '" + izdelkiDGVv.SelectedCells[0].Value.ToString() + "')";
-            HelperFunctions.GetDataInDGV(Izdelki, sestavineIzdelkaDGVv);
-        }
-
         private void surovineCBv_SelectedIndexChanged(object sender, EventArgs e)
         {
             string ZalogaStr = "Select ime, kolicina FROM surovine WHERE kategorija_id LIKE(SELECT id FROM kategorije_s WHERE ime LIKE '" + surovineCBv.SelectedItem.ToString() + "')";
             HelperFunctions.GetDataInDGV(ZalogaStr, surovineDGVv);
+        }
+
+        private void izdelkiDGVv_CellMouseDoubleClick(object sender, DataGridViewCellMouseEventArgs e)
+        {
+            string Izdelki = "SELECT s.ime AS 'Surovina', k.kolicina AS 'Količina' FROM izdelki_surovine k INNER JOIN surovine s ON s.id = k.surovina_id WHERE izdelek_id = (SELECT id FROM izdelki WHERE ime LIKE '" + izdelkiDGVv.SelectedCells[0].Value.ToString() + "')";
+            HelperFunctions.GetDataInDGV(Izdelki, sestavineIzdelkaDGVv);
         }
 
         private void dodajSurovineBv_Click(object sender, EventArgs e)
